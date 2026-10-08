@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f2eb" />
-  <title>Random Name Picker · One Little Teacher</title><meta name="tiny-tools-version" content="2.4.1"><meta name="tiny-tools-build" content="2026-10-08">
+  <title>Random Name Picker · One Little Teacher</title><meta name="tiny-tools-version" content="2.4.1"><meta name="tiny-tools-build" content="2026-10-08.2">
   <style>
     :root {
       --cream:#f6f2eb; --paper:#fffdf9; --navy:#0a375b; --ink:#29485e; --muted:#73818b;
@@ -140,6 +140,43 @@
     @media(max-width:500px) { .topbar { align-items:flex-start;gap:10px; }.top-actions{gap:6px}.mode-row{align-items:flex-start}.pick-actions{width:100%}.pick-card{min-height:490px}.list-card{min-height:0} }
     @media(prefers-reduced-motion:reduce) { .pop{animation:none!important}button:hover{transform:none!important} }
     @media(forced-colors:active) { button,textarea,select,input { border:1px solid ButtonText; } }
+
+    /* Class View: keep the picker and its main action within the visible screen. */
+    body.child-view-mode { height:100vh; height:100svh; min-height:0; overflow:hidden; }
+    .child-view-mode .page { height:100vh; height:100svh; min-height:0; padding:clamp(4px,1.2vh,12px) 0; display:flex; flex-direction:column; overflow:hidden; }
+    .child-view-mode .topbar { flex:0 0 auto; margin-bottom:clamp(3px,1vh,9px); }
+    .child-view-mode .brand-logo { width:clamp(120px,22vw,170px); }
+    .child-view-mode #storageNotice { display:none!important; }
+    .child-view-mode main { flex:1 1 0; min-height:0; overflow:hidden; }
+    .child-view-mode .pick-card { height:100%; min-height:0; padding:clamp(10px,2vh,20px) clamp(12px,3vw,28px); }
+    .child-view-mode .pick-content { height:100%; min-height:0; flex:1 1 auto; }
+    .child-view-mode .eyebrow { flex:0 0 auto; margin:0 0 4px; font-size:clamp(9px,1.5vh,12px); line-height:1.2; }
+    .child-view-mode h1 { flex:0 0 auto; font-size:clamp(22px,4vh,38px); line-height:1.05; }
+    .child-view-mode .subtitle { flex:0 0 auto; max-width:100%; margin:4px 0 0; font-size:clamp(13px,2vh,18px); line-height:1.3; }
+    .child-view-mode .result-box { flex:1 1 0; min-height:0; width:min(100%,700px); margin:clamp(7px,1.4vh,14px) auto 0; padding:clamp(8px,1.8vh,20px); }
+    .child-view-mode .result-spark { margin-bottom:2px; font-size:clamp(14px,3vh,22px); }
+    .child-view-mode .result-label { font-size:10px; }
+    .child-view-mode .result-name { margin:4px 0 0; font-size:clamp(30px,min(9vw,10svh),88px); line-height:1.02; }
+    .child-view-mode .result-hint { margin-top:4px; font-size:12px; }
+    .child-view-mode .round-progress { min-height:0; margin-top:4px; }
+    .child-view-mode .pick-actions { flex:0 0 auto; width:100%; margin-top:0; padding-top:clamp(7px,1.2vh,14px); }
+    .child-view-mode .pick-button { width:auto; min-width:min(100%,360px); max-width:100%; min-height:clamp(50px,10vh,66px); padding:12px 20px; font-size:clamp(17px,2.2vh,21px); }
+    .child-view-mode .status { flex:0 0 auto; min-height:0; margin-top:3px; font-size:11px; line-height:1.25; }
+    @media(max-height:600px) {
+      .child-view-mode .page { padding:4px 0; }
+      .child-view-mode .topbar { gap:6px; margin-bottom:3px; }
+      .child-view-mode .brand-logo { width:clamp(110px,24vw,145px); }
+      .child-view-mode .pick-card { padding:8px 12px; }
+      .child-view-mode .eyebrow { margin-bottom:2px; }
+      .child-view-mode h1 { font-size:clamp(20px,5vh,30px); }
+      .child-view-mode .subtitle { margin-top:2px; font-size:12px; }
+      .child-view-mode .result-box { margin-top:6px; padding:8px; }
+      .child-view-mode .result-spark { font-size:13px; }
+      .child-view-mode .pick-actions { padding-top:6px; }
+      .child-view-mode .pick-button { min-height:48px; padding:8px 14px; }
+      .child-view-mode .status { margin-top:2px; font-size:10px; }
+    }
+
   </style>
 </head>
 <body>
@@ -196,7 +233,7 @@
         <div class="privacy-note"><strong>Your classes stay in this browser.</strong> Names are saved locally when storage is available. They are never uploaded.<p id="offlineNote">Use offline downloads a blank tool, without rosters or pick history. Browser storage can differ between file copies; keep a separate copy of your roster.</p></div>
       </aside>
     </main>
-    <footer class="footer">Free · No account · No ads · Works offline<br>Version 2.4.1 · Build 2026-10-08 · <a href="https://www.onelittleteacher.com/" target="_blank" rel="noopener">Explore One Little Teacher →</a></footer>
+    <footer class="footer">Free · No account · No ads · Works offline<br>Version 2.4.1 · Build 2026-10-08.2 · <a href="https://www.onelittleteacher.com/" target="_blank" rel="noopener">Explore One Little Teacher →</a></footer>
   </div>
   <div id="modal"></div>
   <script>
