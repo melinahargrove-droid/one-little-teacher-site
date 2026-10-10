@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f6f2eb">
-  <meta name="tiny-tools-version" content="1.0.1">
-  <meta name="tiny-tools-build" content="2026-10-10.2">
+  <meta name="tiny-tools-version" content="1.0.2">
+  <meta name="tiny-tools-build" content="2026-10-10.3">
   <title>Make Groups · One Little Teacher</title>
   <style>
     :root{--cream:#f6f2eb;--paper:#fffdf9;--navy:#0a375b;--ink:#29485e;--muted:#536777;--gold:#eca638;--line:#e7e1d8;--shadow:0 18px 54px #0a375b14;font-family:"DM Sans","Avenir Next",Avenir,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
@@ -23,6 +23,39 @@
     @media print{body{background:white!important}.page{width:100%;padding:0}.topbar,.heading,.settings,.results-head .result-actions,.footer,.status-line{display:none!important}main{display:block}.results{min-height:0;padding:0;border:0;box-shadow:none}.results-head{display:block;margin:0 0 14px}.results-head:before{content:"One Little Teacher · Make Groups";display:block;color:#333;font-size:11px;margin-bottom:5px}.group-grid{grid-template-columns:repeat(2,1fr);gap:10px}.group{border:1px solid #aaa!important;box-shadow:none}.group:nth-child(n){border-top:2px solid #666!important}.group h3,.group li{color:#111}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important;transform:none!important}}
     @media(forced-colors:active){.group{border:1px solid CanvasText}.button,.make-button{border:1px solid ButtonText}}
+
+    /* Keep the student-facing view within one screen. */
+    body.class-view{height:100vh;height:100dvh;min-height:0;overflow:hidden;background:var(--cream)}
+    body.class-view .page{width:min(1400px,calc(100% - 24px));height:100vh;height:100dvh;min-height:0;margin:0 auto;padding:10px 0;display:flex;flex-direction:column;overflow:hidden}
+    body.class-view .topbar{flex:0 0 auto;justify-content:flex-end;margin:0 0 6px}
+    body.class-view .brand-link,body.class-view #offlineButton{display:none!important}
+    body.class-view .top-actions{margin-left:auto}
+    body.class-view .heading{flex:0 0 auto;margin:0 0 8px}
+    body.class-view .heading .eyebrow,body.class-view .intro{display:none!important}
+    body.class-view h1{font-size:clamp(32px,4.2vw,48px);line-height:1}
+    body.class-view main{display:flex;flex:1;min-height:0}
+    body.class-view .results{display:flex;flex:1;flex-direction:column;min-height:0;height:100%;padding:clamp(10px,1.8vh,22px);overflow:hidden}
+    body.class-view .results-head,body.class-view .status-line{display:none!important}
+    body.class-view .group-grid{display:grid;flex:1;min-height:0;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));grid-auto-rows:minmax(0,1fr);align-content:stretch;gap:clamp(6px,1vw,14px);overflow:hidden}
+    body.class-view .group{display:flex;min-height:0;flex-direction:column;overflow:hidden;padding:clamp(8px,1vw,14px);border-radius:16px}
+    body.class-view .group h3{flex:0 0 auto;margin:0 0 clamp(3px,.6vh,7px);font-size:clamp(18px,2vw,26px)}
+    body.class-view .group ul{display:flex;flex:1;min-height:0;flex-direction:column;justify-content:space-evenly}
+    body.class-view .group li{display:flex;flex:1;min-height:0;align-items:center;overflow:hidden;padding:clamp(.5px,.18vh,2px) 0;font-size:clamp(9px,min(1.35vw,calc(66vh / var(--student-count))),20px);line-height:1.05}
+    @media(max-width:520px){
+      body.class-view .page{width:calc(100% - 14px);padding:6px 0}
+      body.class-view .topbar{margin-bottom:3px}
+      body.class-view .heading{margin-bottom:4px}
+      body.class-view h1{font-size:clamp(28px,8vw,38px)}
+      body.class-view .results{padding:8px}
+      body.class-view .group-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+      body.class-view .group{padding:6px 8px}
+      body.class-view .group h3{font-size:clamp(16px,4.2vw,20px)}
+      body.class-view .group li{font-size:clamp(9px,min(3.4vw,calc(66vh / var(--student-count))),16px)}
+    }
+    @media(max-width:360px){
+      body.class-view .group-grid{grid-template-columns:1fr}
+      body.class-view .group li{font-size:clamp(10px,min(4vw,calc(66vh / var(--student-count))),17px)}
+    }
   </style>
 </head>
 <body>
@@ -130,7 +163,7 @@ function invalidateGroups(){
       }
       function renderGroups(){
         const grid=$('groupGrid');grid.replaceChildren();lastGroups.forEach((group,index)=>{
-          const card=document.createElement('article');card.className='group';
+          const card=document.createElement('article');card.className='group';card.style.setProperty('--student-count',String(group.length));
           const h=document.createElement('h3');h.append(document.createTextNode(`Group ${index+1}`));const size=document.createElement('span');size.className='group-size';size.textContent=`${group.length} ${group.length===1?'student':'students'}`;h.append(size);card.append(h);
           const list=document.createElement('ul');group.forEach(name=>{const li=document.createElement('li');li.textContent=name;list.append(li)});card.append(list);grid.append(card);
         });
