@@ -617,10 +617,15 @@
         if (state.running) {
           state.remaining = Math.max(0, (state.endAt - Date.now()) / 1000) + add;
           state.endAt = Date.now() + state.remaining * 1000;
+          state.duration += add;
+        } else if (wasComplete) {
+          // Added time after completion is a fresh interval, so every visual starts full.
+          state.remaining = add;
+          state.duration = add;
         } else {
           state.remaining += add;
+          state.duration += add;
         }
-        state.duration += add;
         presets.forEach(item => { item.classList.remove("selected"); item.setAttribute("aria-pressed", "false"); });
         if (wasComplete) {
           status.classList.remove("done");
