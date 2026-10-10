@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f6f2eb">
-  <meta name="tiny-tools-version" content="1.0.0">
-  <meta name="tiny-tools-build" content="2026-10-10.1">
+  <meta name="tiny-tools-version" content="1.0.1">
+  <meta name="tiny-tools-build" content="2026-10-10.2">
   <title>Make Groups · One Little Teacher</title>
   <style>
     :root{--cream:#f6f2eb;--paper:#fffdf9;--navy:#0a375b;--ink:#29485e;--muted:#536777;--gold:#eca638;--line:#e7e1d8;--shadow:0 18px 54px #0a375b14;font-family:"DM Sans","Avenir Next",Avenir,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
@@ -38,7 +38,7 @@
     <section class="heading" aria-labelledby="mainTitle">
       <p class="eyebrow">A free Tiny Tool</p>
       <h1 id="mainTitle">Make Groups</h1>
-      <p class="intro">Turn your class list into balanced groups in seconds. Add names, choose a group size, and let the tool mix everyone up.</p>
+      <p class="intro">Turn your class list into even-sized groups in seconds. Add names, choose a group size, and let the tool mix everyone up.</p>
     </section>
 
     <main>
@@ -96,9 +96,24 @@
       const storageKey='olt.makeGroups.roster.v1';
       function readNames(){return roster.value.split(/\r?\n/).map(n=>n.trim()).filter(Boolean)}
       function announce(message,error=false){const el=$('status');el.textContent=message;el.classList.toggle('error',error)}
-      function updateCount(){const n=readNames().length;$('studentCount').textContent=`${n} ${n===1?'student':'students'}`;$('makeButton').disabled=n<2;if(n<2&&lastGroups.length===0)announce(n===1?'Add at least one more name to make groups.':'');}
+function invalidateGroups(){
+        if(!lastGroups.length)return;
+        lastNames=[];lastGroups=[];
+        const grid=$('groupGrid');grid.replaceChildren();
+        const empty=document.createElement('div');empty.className='empty-state';
+        const content=document.createElement('div');
+        const mark=document.createElement('span');mark.className='empty-mark';mark.setAttribute('aria-hidden','true');mark.textContent='✦';
+        const title=document.createElement('strong');title.textContent='Make an updated set';
+        const note=document.createElement('p');note.textContent='Your class list or grouping settings changed. Choose Make Groups to refresh the results.';
+        content.append(mark,title,note);empty.append(content);grid.append(empty);
+        $('resultActions').hidden=true;
+        $('resultHint').textContent='Your class list or grouping settings changed.';
+        $('statusLine').textContent='Make a new set of groups to copy or print the updated list.';
+        announce('Results cleared. Make groups again to use the updated list.');
+      }
+            function updateCount(){const n=readNames().length;$('studentCount').textContent=`${n} ${n===1?'student':'students'}`;$('makeButton').disabled=n<2;if(n<2&&lastGroups.length===0)announce(n===1?'Add at least one more name to make groups.':'');}
       function persistIfSelected(){if(!save.checked)return;try{localStorage.setItem(storageKey,roster.value)}catch(e){announce('This browser could not save the class list. You can still make groups.',true)}}
-      function setModeText(){const isSize=mode.value==='size';amount.setAttribute('aria-label',isSize?'Students per group':'Number of groups');amount.value=isSize?'4':'4';$('amountHelp').textContent=isSize?'Choose about how many students to put in each group. The groups will be balanced as evenly as possible.':'Choose how many groups to make. Group sizes will be as even as possible.'}
+      function setModeText(){const isSize=mode.value==='size';amount.setAttribute('aria-label',isSize?'Students per group':'Number of groups');amount.value=isSize?'4':'4';$('amountHelp').textContent=isSize?'Choose about how many students to put in each group. Group sizes will be as even as possible.':'Choose how many groups to make. Group sizes will be as even as possible.'}
       function shuffled(items){const a=items.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
       function makeGroups(announceResult=true){
         const names=readNames();if(names.length<2){announce(names.length?'Add at least one more name to make groups.':'Add student names first.',true);return}
@@ -109,7 +124,7 @@
         mixed.forEach((name,index)=>groups[index%count].push(name));
         lastNames=names;lastGroups=groups;renderGroups();
         const sizes=groups.map(g=>g.length);const largest=Math.max(...sizes),smallest=Math.min(...sizes);
-        const note=smallest===largest?`${names.length} students in ${count} even ${count===1?'group':'groups'}.`:`${names.length} students in ${count} balanced groups. Group sizes differ by just ${largest-smallest}.`;
+        const note=smallest===largest?`${names.length} students in ${count} even-sized ${count===1?'group':'groups'}.`:`${names.length} students in ${count} groups. Group sizes differ by just ${largest-smallest}.`;
         $('resultHint').textContent=note;$('resultActions').hidden=false;$('statusLine').textContent='Need a different mix? Shuffle again. You can copy or print these group lists.';
         if(announceResult)announce('Groups are ready.');
       }
@@ -122,8 +137,9 @@
       }
       $('makeButton').addEventListener('click',()=>makeGroups());
       $('shuffleButton').addEventListener('click',()=>makeGroups(false));
-      roster.addEventListener('input',()=>{updateCount();persistIfSelected()});
-      mode.addEventListener('change',setModeText);
+      roster.addEventListener('input',()=>{invalidateGroups();updateCount();persistIfSelected()});
+      mode.addEventListener('change',()=>{invalidateGroups();setModeText()});
+      amount.addEventListener('input',invalidateGroups);
       amount.addEventListener('change',()=>{amount.value=String(Math.max(1,Math.min(60,Number.parseInt(amount.value,10)||1))) });
       $('clearButton').addEventListener('click',()=>{roster.value='';lastNames=[];lastGroups=[];$('groupGrid').innerHTML='<div class="empty-state"><div><span class="empty-mark" aria-hidden="true">✦</span><strong>Ready when you are</strong><p>Your group lists will appear here. Choose a number of groups or aim for a certain number of students in each group.</p></div></div>';$('resultActions').hidden=true;$('resultHint').textContent='Add your class list, then choose Make Groups.';$('statusLine').textContent='Groups are mixed randomly. Group sizes stay as even as possible.';updateCount();persistIfSelected();announce('Class list cleared.')});
       save.addEventListener('change',()=>{try{if(save.checked){localStorage.setItem(storageKey,roster.value);announce('This class list will be saved on this device.')}else{localStorage.removeItem(storageKey);announce('Saved class list removed from this device.')}}catch(e){save.checked=false;announce('This browser could not save the class list.',true)}});
