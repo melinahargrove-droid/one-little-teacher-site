@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f2eb">
+  <meta name="tiny-tools-version" content="1.0.0">
+  <meta name="tiny-tools-build" content="2026-10-10.1">
+  <title>Make Groups · One Little Teacher</title>
+  <style>
+    :root{--cream:#f6f2eb;--paper:#fffdf9;--navy:#0a375b;--ink:#29485e;--muted:#536777;--gold:#eca638;--line:#e7e1d8;--shadow:0 18px 54px #0a375b14;font-family:"DM Sans","Avenir Next",Avenir,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 12%,#f4dcca8c,transparent 25rem),radial-gradient(ellipse at 92% 22%,#dceaf0b3,transparent 27rem),var(--cream)}
+    button,input,textarea,select{font:inherit}button{touch-action:manipulation;cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+    .page{width:min(1120px,calc(100% - 30px));margin:auto;padding:22px 0 34px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}.brand-link{display:inline-flex;align-items:center;color:var(--navy);font-weight:850;text-decoration:none}.brand-logo{display:block;width:190px;height:auto}.top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.button{display:inline-flex;justify-content:center;align-items:center;gap:7px;min-height:44px;border:1px solid #d8e2e4;border-radius:999px;padding:9px 14px;background:#fffdf9;color:var(--navy);font-size:12px;font-weight:850;text-decoration:none;transition:.18s ease}.button:hover{background:white;border-color:#aebfc9;transform:translateY(-1px)}.button.primary{background:var(--navy);border-color:var(--navy);color:white}.button.primary:hover{background:#124c77}.button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+    .heading{text-align:center;margin:0 auto 20px}.eyebrow{margin:0 0 7px;color:#895a18;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}h1{margin:0;color:var(--navy);font-size:clamp(34px,5vw,48px);line-height:1.04;letter-spacing:-.055em}.intro{max-width:560px;margin:10px auto 0;color:var(--muted);font-size:15px;line-height:1.55}
+    main{display:grid;grid-template-columns:minmax(290px,.82fr) minmax(0,1.5fr);gap:20px;align-items:start}.card{min-width:0;border:1px solid #fff;border-radius:25px;background:rgba(255,253,249,.96);box-shadow:var(--shadow)}.settings{padding:24px}.card-title{margin:0;color:var(--navy);font-size:20px;letter-spacing:-.03em}.hint{margin:6px 0 16px;color:var(--muted);font-size:13px;line-height:1.5}.field-label{display:flex;justify-content:space-between;gap:8px;margin:0 0 7px;color:#587184;font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.student-count{color:#45624d;font-size:12px;letter-spacing:0;text-transform:none}.roster{display:block;width:100%;min-height:265px;resize:vertical;border:1px solid #81939f;border-radius:15px;padding:13px;background:#fff;color:var(--navy);font-size:15px;line-height:1.55}.roster::placeholder{color:#657987}.roster:focus{border-color:#8aa6b5;box-shadow:0 0 0 3px #dceaf077;outline:none}.roster-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:8px 0 18px}.text-button{border:0;padding:4px 0;background:transparent;color:var(--navy);font-size:12px;font-weight:850;text-decoration:underline;text-underline-offset:3px}.small-count{color:var(--muted);font-size:11px}
+    .setting-block{margin-top:16px}.setting-block label{display:block;margin-bottom:7px;color:var(--navy);font-size:13px;font-weight:850}.select-wrap{display:grid;grid-template-columns:1fr 100px;align-items:center;gap:10px}.mode-select,.number-input{width:100%;min-height:46px;border:1px solid #81939f;border-radius:12px;padding:9px 11px;background:#fff;color:var(--navy)}.number-input{text-align:center;font-weight:850}.field-help{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.45}.save-row{display:flex;align-items:flex-start;gap:10px;margin-top:19px;padding:13px;border:1px solid #d9e4df;border-radius:14px;background:#f0f5ef}.save-row input{width:19px;height:19px;margin:2px 0 0;accent-color:var(--navy);flex:none}.save-row label{display:block;color:#45624d;font-size:13px;font-weight:850;cursor:pointer}.save-row small{display:block;margin-top:3px;color:#536d5b;font-size:11px;line-height:1.45;font-weight:500}.privacy{margin:12px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.make-button{width:100%;min-height:52px;margin-top:19px;border:0;border-radius:15px;background:var(--navy);color:white;font-size:15px;font-weight:900;box-shadow:0 7px 15px #0a375b25}.make-button:hover:not(:disabled){background:#124c77}.make-button:disabled{opacity:.5;cursor:not-allowed}.status{min-height:20px;margin:10px 0 0;color:#45624d;font-size:12px;font-weight:750;line-height:1.45}.status.error{color:#933e2d}
+    .results{padding:24px;min-height:575px}.results-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:17px}.results-head .hint{margin:5px 0 0}.result-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.result-actions .button{min-height:40px;padding:8px 11px}.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.group{min-width:0;border:1px solid #e6e0d6;border-radius:17px;background:#fff;padding:15px 16px;break-inside:avoid}.group:nth-child(4n+1){border-top:4px solid #d6a64f}.group:nth-child(4n+2){border-top:4px solid #8caeba}.group:nth-child(4n+3){border-top:4px solid #cb9a8d}.group:nth-child(4n){border-top:4px solid #a6b59b}.group h3{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 10px;color:var(--navy);font-size:15px}.group-size{color:var(--muted);font-size:11px;font-weight:700}.group ul{margin:0;padding:0;list-style:none}.group li{padding:5px 0;border-bottom:1px solid #f0ece5;color:#29485e;font-size:15px;line-height:1.35;overflow-wrap:anywhere}.group li:last-child{border-bottom:0;padding-bottom:0}.empty-state{display:grid;place-items:center;min-height:430px;padding:30px;border:2px dashed #d8d2c9;border-radius:17px;text-align:center;color:var(--muted)}.empty-mark{display:grid;place-items:center;width:60px;height:60px;margin:0 auto 12px;border-radius:19px;background:#edf3f4;color:var(--navy);font-size:26px}.empty-state strong{display:block;margin-bottom:5px;color:var(--navy);font-size:17px}.empty-state p{max-width:330px;margin:0;font-size:13px;line-height:1.5}.status-line{margin:14px 0 0;color:var(--muted);font-size:12px;line-height:1.5}.footer{margin:17px 0 0;color:var(--muted);font-size:12px;text-align:center;line-height:1.6}.footer a{color:var(--navy);font-weight:850;text-decoration:underline;text-underline-offset:3px}
+    body.class-view{background:var(--cream)}.class-view .page{width:min(1400px,calc(100% - 28px));padding-top:13px}.class-view .topbar{margin-bottom:12px}.class-view .brand-logo{width:155px}.class-view .heading{margin-bottom:14px}.class-view .heading .eyebrow{font-size:12px}.class-view h1{font-size:clamp(35px,5vw,60px)}.class-view .intro,.class-view #settingsCard,.class-view .footer{display:none!important}.class-view main{display:block}.class-view .results{min-height:0;padding:clamp(18px,3vw,32px)}.class-view .results-head{align-items:center}.class-view .results-head .hint{font-size:15px}.class-view .group-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.class-view .group{padding:18px 20px;border-radius:20px}.class-view .group h3{font-size:clamp(20px,2vw,27px)}.class-view .group li{padding:8px 0;font-size:clamp(19px,1.7vw,24px)}.class-view .group-size{font-size:13px}.class-view .status-line{font-size:14px}
+    @media(max-width:820px){main{grid-template-columns:1fr}.settings{order:1}.results{order:2;min-height:0}.results-head{flex-wrap:wrap}.result-actions{justify-content:flex-start}.empty-state{min-height:250px}}
+    @media(max-width:520px){.page{width:calc(100% - 18px);padding:14px 0 24px}.topbar{align-items:flex-start;gap:9px;margin-bottom:16px}.brand-logo{width:min(160px,42vw)}.top-actions{justify-content:flex-end;gap:6px}.button{min-height:42px;padding:8px 10px;font-size:11px}.heading{margin-bottom:15px}h1{font-size:37px}.intro{font-size:14px}.card{border-radius:22px}.settings,.results{padding:18px 15px}.roster{min-height:205px}.results-head{display:block}.results-head .result-actions{margin-top:12px}.group-grid{grid-template-columns:1fr;gap:9px}.group{padding:13px 14px}.group li{font-size:16px}.class-view .page{width:calc(100% - 16px);padding-top:9px}.class-view .brand-logo{width:125px}.class-view .topbar{align-items:center}.class-view .results{padding:15px 12px}.class-view .group-grid{grid-template-columns:1fr 1fr;gap:9px}.class-view .group{padding:12px 12px}.class-view .group h3{font-size:18px}.class-view .group li{font-size:17px;padding:6px 0}.class-view .status-line{font-size:12px}}
+    @media(max-width:360px){.class-view .group-grid{grid-template-columns:1fr}.top-actions{max-width:58%}.class-view .group li{font-size:19px}}
+    @media print{body{background:white!important}.page{width:100%;padding:0}.topbar,.heading,.settings,.results-head .result-actions,.footer,.status-line{display:none!important}main{display:block}.results{min-height:0;padding:0;border:0;box-shadow:none}.results-head{display:block;margin:0 0 14px}.results-head:before{content:"One Little Teacher · Make Groups";display:block;color:#333;font-size:11px;margin-bottom:5px}.group-grid{grid-template-columns:repeat(2,1fr);gap:10px}.group{border:1px solid #aaa!important;box-shadow:none}.group:nth-child(n){border-top:2px solid #666!important}.group h3,.group li{color:#111}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important;transform:none!important}}
+    @media(forced-colors:active){.group{border:1px solid CanvasText}.button,.make-button{border:1px solid ButtonText}}
+  </style>
+</head>
+<body>
+  <div class="page" id="app">
+    <header class="topbar">
+      <a class="brand-link" href="https://www.onelittleteacher.com/" aria-label="One Little Teacher home"><img class="brand-logo" src="../one%20little%20teacher%20logo.png" alt="One Little Teacher"></a>
+      <div class="top-actions">
+        <a class="button" id="offlineButton" href="#" download="make-groups.html">↓ Download for offline use</a>
+        <button class="button primary" id="viewButton" type="button">Class View</button>
+      </div>
+    </header>
+
+    <section class="heading" aria-labelledby="mainTitle">
+      <p class="eyebrow">A free Tiny Tool</p>
+      <h1 id="mainTitle">Make Groups</h1>
+      <p class="intro">Turn your class list into balanced groups in seconds. Add names, choose a group size, and let the tool mix everyone up.</p>
+    </section>
+
+    <main>
+      <section class="card settings" id="settingsCard" aria-labelledby="listTitle">
+        <h2 class="card-title" id="listTitle">Your class list</h2>
+        <p class="hint">Enter one student name per line. Names are only used to make this set of groups.</p>
+        <label class="field-label" for="roster">Student names <span class="student-count" id="studentCount">0 students</span></label>
+        <textarea class="roster" id="roster" autocomplete="off" spellcheck="false" placeholder="Paste or type names here, one per line"></textarea>
+        <div class="roster-actions"><button class="text-button" id="clearButton" type="button">Clear list</button><span class="small-count">Blank lines are ignored</span></div>
+
+        <div class="setting-block">
+          <label for="groupMode">Group students by</label>
+          <div class="select-wrap">
+            <select class="mode-select" id="groupMode">
+              <option value="groups">Number of groups</option>
+              <option value="size">Students per group</option>
+            </select>
+            <input class="number-input" id="groupAmount" type="number" min="1" max="60" value="4" inputmode="numeric" aria-label="Group amount">
+          </div>
+          <p class="field-help" id="amountHelp">Choose how many groups to make. Group sizes will be as even as possible.</p>
+        </div>
+
+        <div class="save-row">
+          <input id="saveRoster" type="checkbox">
+          <label for="saveRoster">Save my class list on this device<small>Optional. Only this browser on this device can access the saved list. Uncheck to remove it.</small></label>
+        </div>
+        <p class="privacy">Your list stays in this browser. Make Groups does not send student names to a server.</p>
+        <button class="make-button" id="makeButton" type="button" disabled>Make Groups</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card results" aria-labelledby="groupsTitle">
+        <div class="results-head">
+          <div><h2 class="card-title" id="groupsTitle">Your groups</h2><p class="hint" id="resultHint">Add your class list, then choose Make Groups.</p></div>
+          <div class="result-actions" id="resultActions" hidden>
+            <button class="button" id="shuffleButton" type="button">↻ Shuffle</button>
+            <button class="button" id="copyButton" type="button">Copy groups</button>
+            <button class="button" id="printButton" type="button">Print</button>
+          </div>
+        </div>
+        <div class="group-grid" id="groupGrid" aria-live="polite">
+          <div class="empty-state" id="emptyState"><div><span class="empty-mark" aria-hidden="true">✦</span><strong>Ready when you are</strong><p>Your group lists will appear here. Choose a number of groups or aim for a certain number of students in each group.</p></div></div>
+        </div>
+        <p class="status-line" id="statusLine">Groups are mixed randomly. Group sizes stay as even as possible.</p>
+      </section>
+    </main>
+    <footer class="footer">A little classroom helper from <a href="https://www.onelittleteacher.com/">One Little Teacher</a>.</footer>
+  </div>
+
+  <script>
+    (()=>{
+      const $=id=>document.getElementById(id);
+      const roster=$('roster'),mode=$('groupMode'),amount=$('groupAmount'),save=$('saveRoster');
+      let lastNames=[],lastGroups=[];
+      const storageKey='olt.makeGroups.roster.v1';
+      function readNames(){return roster.value.split(/\r?\n/).map(n=>n.trim()).filter(Boolean)}
+      function announce(message,error=false){const el=$('status');el.textContent=message;el.classList.toggle('error',error)}
+      function updateCount(){const n=readNames().length;$('studentCount').textContent=`${n} ${n===1?'student':'students'}`;$('makeButton').disabled=n<2;if(n<2&&lastGroups.length===0)announce(n===1?'Add at least one more name to make groups.':'');}
+      function persistIfSelected(){if(!save.checked)return;try{localStorage.setItem(storageKey,roster.value)}catch(e){announce('This browser could not save the class list. You can still make groups.',true)}}
+      function setModeText(){const isSize=mode.value==='size';amount.setAttribute('aria-label',isSize?'Students per group':'Number of groups');amount.value=isSize?'4':'4';$('amountHelp').textContent=isSize?'Choose about how many students to put in each group. The groups will be balanced as evenly as possible.':'Choose how many groups to make. Group sizes will be as even as possible.'}
+      function shuffled(items){const a=items.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+      function makeGroups(announceResult=true){
+        const names=readNames();if(names.length<2){announce(names.length?'Add at least one more name to make groups.':'Add student names first.',true);return}
+        let value=Math.max(1,Math.min(60,Number.parseInt(amount.value,10)||1));amount.value=String(value);
+        let count;
+        if(mode.value==='size')count=Math.ceil(names.length/value);else count=Math.min(value,names.length);
+        const groups=Array.from({length:count},()=>[]);const mixed=shuffled(names);
+        mixed.forEach((name,index)=>groups[index%count].push(name));
+        lastNames=names;lastGroups=groups;renderGroups();
+        const sizes=groups.map(g=>g.length);const largest=Math.max(...sizes),smallest=Math.min(...sizes);
+        const note=smallest===largest?`${names.length} students in ${count} even ${count===1?'group':'groups'}.`:`${names.length} students in ${count} balanced groups. Group sizes differ by just ${largest-smallest}.`;
+        $('resultHint').textContent=note;$('resultActions').hidden=false;$('statusLine').textContent='Need a different mix? Shuffle again. You can copy or print these group lists.';
+        if(announceResult)announce('Groups are ready.');
+      }
+      function renderGroups(){
+        const grid=$('groupGrid');grid.replaceChildren();lastGroups.forEach((group,index)=>{
+          const card=document.createElement('article');card.className='group';
+          const h=document.createElement('h3');h.append(document.createTextNode(`Group ${index+1}`));const size=document.createElement('span');size.className='group-size';size.textContent=`${group.length} ${group.length===1?'student':'students'}`;h.append(size);card.append(h);
+          const list=document.createElement('ul');group.forEach(name=>{const li=document.createElement('li');li.textContent=name;list.append(li)});card.append(list);grid.append(card);
+        });
+      }
+      $('makeButton').addEventListener('click',()=>makeGroups());
+      $('shuffleButton').addEventListener('click',()=>makeGroups(false));
+      roster.addEventListener('input',()=>{updateCount();persistIfSelected()});
+      mode.addEventListener('change',setModeText);
+      amount.addEventListener('change',()=>{amount.value=String(Math.max(1,Math.min(60,Number.parseInt(amount.value,10)||1))) });
+      $('clearButton').addEventListener('click',()=>{roster.value='';lastNames=[];lastGroups=[];$('groupGrid').innerHTML='<div class="empty-state"><div><span class="empty-mark" aria-hidden="true">✦</span><strong>Ready when you are</strong><p>Your group lists will appear here. Choose a number of groups or aim for a certain number of students in each group.</p></div></div>';$('resultActions').hidden=true;$('resultHint').textContent='Add your class list, then choose Make Groups.';$('statusLine').textContent='Groups are mixed randomly. Group sizes stay as even as possible.';updateCount();persistIfSelected();announce('Class list cleared.')});
+      save.addEventListener('change',()=>{try{if(save.checked){localStorage.setItem(storageKey,roster.value);announce('This class list will be saved on this device.')}else{localStorage.removeItem(storageKey);announce('Saved class list removed from this device.')}}catch(e){save.checked=false;announce('This browser could not save the class list.',true)}});
+      $('copyButton').addEventListener('click',async()=>{if(!lastGroups.length)return;const text=lastGroups.map((g,i)=>`Group ${i+1}\n${g.map(n=>`• ${n}`).join('\n')}`).join('\n\n');try{await navigator.clipboard.writeText(text);announce('Group lists copied.')}catch(e){announce('Copy is not available in this browser. You can print the group lists instead.',true)}});
+      $('printButton').addEventListener('click',()=>window.print());
+      $('viewButton').addEventListener('click',()=>{const active=document.body.classList.toggle('class-view');$('viewButton').textContent=active?'Teacher View':'Class View';$('viewButton').setAttribute('aria-pressed',String(active));if(active)$('mainTitle').textContent='Our Groups';else $('mainTitle').textContent='Make Groups'});
+      $('offlineButton').addEventListener('click',event=>{event.preventDefault();try{const html='<!doctype html>\n'+document.documentElement.outerHTML;const url=URL.createObjectURL(new Blob([html],{type:'text/html'}));const a=document.createElement('a');a.href=url;a.download='make-groups.html';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);announce('Downloaded Make Groups for offline use.')}catch(e){announce('Download could not start. Use your browser menu to save this page.',true)}});
+      try{const existing=localStorage.getItem(storageKey);if(existing!==null){save.checked=true;roster.value=existing;announce('Your saved class list is ready on this device.')}}catch(e){}
+      setModeText();updateCount();
+    })();
+  </script>
+</body>
+</html>
