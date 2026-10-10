@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f6f2eb">
-  <meta name="tiny-tools-version" content="1.0.2">
-  <meta name="tiny-tools-build" content="2026-10-10.3">
+  <meta name="tiny-tools-version" content="1.0.3">
+  <meta name="tiny-tools-build" content="2026-10-10.4">
   <title>Make Groups · One Little Teacher</title>
   <style>
     :root{--cream:#f6f2eb;--paper:#fffdf9;--navy:#0a375b;--ink:#29485e;--muted:#536777;--gold:#eca638;--line:#e7e1d8;--shadow:0 18px 54px #0a375b14;font-family:"DM Sans","Avenir Next",Avenir,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
@@ -50,11 +50,14 @@
       body.class-view .group-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
       body.class-view .group{padding:6px 8px}
       body.class-view .group h3{font-size:clamp(16px,4.2vw,20px)}
-      body.class-view .group li{font-size:clamp(9px,min(3.4vw,calc(66vh / var(--student-count))),16px)}
+      body.class-view .group li{font-size:clamp(9px,min(3.8vw,calc(30vh / var(--student-count))),16px)}
     }
     @media(max-width:360px){
-      body.class-view .group-grid{grid-template-columns:1fr}
-      body.class-view .group li{font-size:clamp(10px,min(4vw,calc(66vh / var(--student-count))),17px)}
+      body.class-view .group-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      body.class-view .group{padding:5px}
+      body.class-view .group h3{font-size:15px}
+      body.class-view .group-size{font-size:9px}
+      body.class-view .group li{font-size:clamp(9px,min(3.8vw,calc(30vh / var(--student-count))),15px)}
     }
   </style>
 </head>
