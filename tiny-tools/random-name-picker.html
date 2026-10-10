@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f2eb" />
-  <title>Random Name Picker · One Little Teacher</title><meta name="tiny-tools-version" content="2.5.1"><meta name="tiny-tools-build" content="2026-10-10.2">
+  <title>Random Name Picker · One Little Teacher</title><meta name="tiny-tools-version" content="2.5.2"><meta name="tiny-tools-build" content="2026-10-10.3">
   <style>
     :root {
       --cream:#f6f2eb; --paper:#fffdf9; --navy:#0a375b; --ink:#29485e; --muted:#73818b;
@@ -156,7 +156,7 @@
     .child-view-mode .result-box { flex:1 1 0; min-height:0; width:min(100%,700px); margin:clamp(7px,1.4vh,14px) auto 0; padding:clamp(8px,1.8vh,20px); }
     .child-view-mode .result-spark { margin-bottom:2px; font-size:clamp(14px,3vh,22px); }
     .child-view-mode .result-label { font-size:10px; }
-    .child-view-mode .result-name { margin:4px 0 0; font-size:clamp(30px,min(9vw,10svh),88px); line-height:1.02; }
+    .child-view-mode .result-name { margin:4px 0 0; font-size:clamp(42px,min(12vw,13svh),132px); line-height:1.02; }
     .child-view-mode .result-hint { margin-top:4px; font-size:12px; }
     .child-view-mode .round-progress { min-height:0; margin-top:4px; }
     .child-view-mode .pick-actions { flex:0 0 auto; width:100%; margin-top:0; padding-top:clamp(7px,1.2vh,14px); }
@@ -171,6 +171,7 @@
       .child-view-mode h1 { font-size:clamp(20px,5vh,30px); }
       .child-view-mode .subtitle { margin-top:2px; font-size:12px; }
       .child-view-mode .result-box { margin-top:6px; padding:8px; }
+      .child-view-mode .result-name { font-size:clamp(30px,min(10vw,9svh),94px); }
       .child-view-mode .result-spark { font-size:13px; }
       .child-view-mode .pick-actions { padding-top:6px; }
       .child-view-mode .pick-button { min-height:48px; padding:8px 14px; }
@@ -222,7 +223,7 @@
         <div class="privacy-note"><strong>Your list stays in this tab unless you choose to save it.</strong> Names are never uploaded.<p id="offlineNote">Download for offline use saves a blank copy of the picker. Your class list is not included.</p></div>
       </aside>
     </main>
-    <footer class="footer">Free · No account · No ads · Offline-friendly<br>Version 2.5.1 · Build 2026-10-10.2 · <a href="https://www.onelittleteacher.com/" target="_blank" rel="noopener">Explore One Little Teacher →</a></footer>
+    <footer class="footer">Free · No account · No ads · Offline-friendly<br>Version 2.5.2 · Build 2026-10-10.3 · <a href="https://www.onelittleteacher.com/" target="_blank" rel="noopener">Explore One Little Teacher →</a></footer>
   </div>
   <div id="modal"></div>
   <script>
@@ -345,7 +346,7 @@
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Random_Name_Picker_v2.5.1.html';
+    link.download = 'Random_Name_Picker_v2.5.2.html';
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     status.textContent = 'Offline download started. Keep the HTML file to use the picker without internet. The class list is not included.';
