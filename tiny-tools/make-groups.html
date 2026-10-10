@@ -73,6 +73,12 @@
 .tiny-tools-side-mark{display:block;flex:0 0 auto;width:76px;height:62px;max-height:62px;margin:0;object-fit:contain;object-position:center;}
 .tiny-tools-lockup .official-logo,.tiny-tools-lockup .logo,.tiny-tools-lockup .brand-logo{display:block;width:min(220px,45vw);max-height:58px;height:auto;object-fit:contain;}
 @media(max-width:560px){.tiny-tools-lockup{gap:8px;}.tiny-tools-lockup .official-logo,.tiny-tools-lockup .logo,.tiny-tools-lockup .brand-logo{width:min(160px,40vw);max-height:48px;}.tiny-tools-side-mark{width:56px;height:48px;max-height:48px;}.tiny-tools-divider{height:38px;}}
+
+/* Keep the two logos on one aligned row */
+header .tiny-tools-lockup{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:flex-start!important;gap:12px!important;width:max-content!important;max-width:100%;}
+header .tiny-tools-lockup>.tiny-tools-divider{display:block!important;flex:0 0 1px!important;width:1px!important;height:48px!important;}
+header .tiny-tools-lockup>.tiny-tools-side-mark{display:block!important;flex:0 0 auto!important;width:76px!important;height:62px!important;max-height:62px!important;margin:0!important;}
+@media(max-width:560px){header .tiny-tools-lockup{gap:8px!important;}header .tiny-tools-lockup>.tiny-tools-side-mark{width:56px!important;height:48px!important;max-height:48px!important;}header .tiny-tools-lockup>.tiny-tools-divider{height:38px!important;}}
 </style>
 </head>
 <body>
