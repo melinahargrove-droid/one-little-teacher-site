@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+/* Touch-friendly sizes for SmartBoard (Oct 12, 2026) */
+.btn{min-height:48px !important;}
+.pill{min-height:48px !important;min-width:48px !important;}
+</style>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="icon" href="data:,">
@@ -483,7 +489,7 @@ function endDrag(x,y){
 /* ================= Pot ================= */
 const canvas=$('potCanvas'), ctx=canvas.getContext('2d');
 const potBackImg=new Image(), potFrontImg=new Image();
-potBackImg.src=IMG['pot-back']; potFrontImg.src=IMG['pot-front'];
+potBackImg.src=IMG['pot-back']; if(IMG['pot-front'])potFrontImg.src=IMG['pot-front'];
 const pieceImgs={};
 ORDER.forEach(v=>{ const i=new Image(); i.src=IMG['piece-'+v]; pieceImgs[v]=i; });
 let potW=0, potH=0, dpr=1;
