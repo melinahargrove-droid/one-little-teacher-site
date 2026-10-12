@@ -1,0 +1,29 @@
+{
+  "index.html": {
+    "local_links": [
+      "tiny-tools.html",
+      "tiny-tools.html",
+      "tiny-tools.html",
+      "tiny-tools.html"
+    ],
+    "missing": []
+  },
+  "tiny-tools.html": {
+    "local_links": [
+      "index.html#home",
+      "index.html#home",
+      "index.html#little-play",
+      "index.html#little-solutions",
+      "index.html#little-creations",
+      "index.html#about",
+      "tools/visual-timer.html",
+      "tools/help-queue.html",
+      "tools/random-name-picker.html",
+      "index.html#happy-mail",
+      "index.html#home",
+      "index.html#collections",
+      "index.html#about"
+    ],
+    "missing": []
+  }
+}
