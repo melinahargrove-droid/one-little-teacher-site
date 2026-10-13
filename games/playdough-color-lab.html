@@ -136,7 +136,7 @@
     <h1><span class="c1">P</span><span class="c2">l</span><span class="c3">a</span><span class="c4">y</span><span class="c5">d</span><span class="c1">o</span><span class="c2">u</span><span class="c3">g</span><span class="c4">h</span> <span class="c5">C</span><span class="c1">o</span><span class="c2">l</span><span class="c3">o</span><span class="c4">r</span> <span class="c5">L</span><span class="c1">a</span><span class="c2">b</span></h1>
     <div class="sub">Mix • Squish • Discover!</div>
   </div>
-  <div class="pill" id="soundPill">🔊 Sound On</div>
+  <div class="pill" id="soundPill">🔊 Sound On</div><button class="pill" id="download-app" title="Download this app to use offline" style="background:#d4a843;color:#1a3a5c;font-weight:700;min-height:48px;">⬇ Download App</button>
 </header>
 <div id="tubRow"></div>
 <main>
@@ -875,5 +875,22 @@ setTimeout(fitMat, 400);
 setTimeout(()=>{ if(!document.getElementById("modeOverlay").classList.contains("hide")) return; }, 1000);
 </script>
 
+
+<script>
+(function() {
+  var btn = document.getElementById('download-app');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], {type: 'text/html'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'playdough-color-lab.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  });
+})();
+</script>
 </body>
 </html>

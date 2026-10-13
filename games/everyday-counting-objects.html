@@ -132,7 +132,7 @@
 
 <div id="game">
   <div id="progress">Question 1 of 5</div>
-  <div id="topRow">
+  <div id="topRow"><button class="iconBtn" id="download-app" title="Download this app to use offline" style="background:#d4a843;color:#1a3a5c;font-weight:700;min-height:48px;">⬇ Download App</button>
     <button class="iconBtn" id="homeBtn">🏠 Home</button>
     <button class="iconBtn" id="markerBtn">🔢 Markers On</button>
     <button class="iconBtn" id="soundBtn">🔊 Sound On</button>
@@ -337,6 +337,23 @@ function showDone(){
 }
 
 // Init
+</script>
+
+<script>
+(function() {
+  var btn = document.getElementById('download-app');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], {type: 'text/html'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'everyday-counting-objects.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  });
+})();
 </script>
 </body>
 </html>

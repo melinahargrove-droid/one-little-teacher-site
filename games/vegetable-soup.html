@@ -189,7 +189,7 @@
     <h1><span class="c1">V</span><span class="c2">e</span><span class="c3">g</span><span class="c4">e</span><span class="c1">t</span><span class="c2">a</span><span class="c3">b</span><span class="c4">l</span><span class="c1">e</span> <span class="c2">S</span><span class="c3">o</span><span class="c4">u</span><span class="c1">p</span></h1>
     <div class="sub">Chop • Count • Cook!</div>
   </div>
-  <button class="pill" id="soundBtn">🔊 Sound On</button>
+  <button class="pill" id="soundBtn">🔊 Sound On</button><button class="pill" id="download-app" title="Download this app to use offline" style="background:#d4a843;color:#1a3a5c;font-weight:700;min-height:48px;">⬇ Download App</button>
 </header>
 
 <div id="banner"><img id="bannerImg" alt=""><span id="bannerText">Let's cook!</span></div>
@@ -822,6 +822,23 @@ ORDER.forEach(v=>{ pieceImgs[v].onload=()=>drawPot(); });
 buildIngPicker();
 sizePot();
 
+</script>
+
+<script>
+(function() {
+  var btn = document.getElementById('download-app');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], {type: 'text/html'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'vegetable-soup.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  });
+})();
 </script>
 </body>
 </html>

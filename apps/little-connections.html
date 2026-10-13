@@ -22,7 +22,7 @@ button[data-pan] {
 }
 </style>
 </head><body>
-<header class="app-header"><div><p class="brand">ONE LITTLE TEACHER</p><h1>Little Connections</h1></div><div class="project-tools"><button id="new-project">New set</button><button id="import">Import project</button><button class="primary" id="export">Export project</button><input type="file" id="file-input" accept=".json,application/json" hidden></div></header>
+<header class="app-header"><div><p class="brand">ONE LITTLE TEACHER</p><h1>Little Connections</h1></div><div class="project-tools"><button id="new-project">New set</button><button id="import">Import project</button><button class="primary" id="export">Export project</button><button id="download-app" title="Download this app to use offline" style="background:#d4a843;color:#1a3a5c;font-weight:700;min-height:48px;">⬇ Download App</button><input type="file" id="file-input" accept=".json,application/json" hidden></div></header>
 <main id="app"><div id="storage-warning" class="notice" hidden></div><div class="project-bar"><label class="project-name">Concept set<input id="project-name" maxlength="100"></label><label>Saved on this browser<select id="projects"></select></label><div class="save-state"><span id="save-status" role="status" aria-live="polite"></span><small>Applied content and recovery drafts are separate. Export the entire collection to back up both.</small></div></div><div class="collection-actions"><button id="delete-project">Delete set…</button><button id="undo" disabled>Undo</button><button id="redo" disabled>Redo</button><span id="history-help" class="hint">Undo keeps the last 20 changes to this set in this session.</span></div><details id="collection-panel"><summary>Manage saved sets &amp; Recently deleted</summary><p id="collection-count" class="hint"></p><p class="hint">Rename the selected set in Concept set above. Deleted sets and arrangements stay here across reloads and do not use active slots. Nothing is automatically removed. Browser storage can fill; export backups before clearing recovery copies.</p><button id="export-collection">Export entire collection backup</button><div id="trash-list"></div></details>
 <nav class="mode-nav" aria-label="Workspace"><button class="active" data-mode="concepts" aria-current="page">1 · Your concepts</button><button data-mode="print">2 · Print &amp; Connect</button><button data-mode="digital">3 · Connect Digitally</button></nav>
 <div id="message" class="message" role="status" aria-live="polite"></div>
@@ -397,7 +397,24 @@ function prepareBoardPrint(){
  const snap=exportSnapshot||S.snapshot(project),svg=S.boardSVG(snap);$('#print-root').innerHTML='<div class="print-page board-snapshot-page">'+svg+'</div>'+( $('#board-explanations').checked?S.explanationPages(snap,project.print.paper).map(s=>'<div class="print-page">'+s+'</div>').join(''):'');return true;
 }
 $('#export-board').onclick=()=>{if(!contentReady())return;exportSnapshot=S.snapshot(project);if(download(S.boardSVG(exportSnapshot),safeName(project.name)+' - '+safeName(arrangement().name)+'.svg','image/svg+xml'))tell('Board SVG exported from the selected arrangement. Use Download saved explanations pages for a separate sheet.');};
-$('#export-explanations').onclick=()=>{if(!contentReady())return;const snap=S.snapshot(project),pages=S.explanationPages(snap,project.print.paper),{w,h}=C.PAPERS[project.print.paper];const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><title>Saved explanations</title><style>svg{display:block;max-width:100%;height:auto;margin:auto;break-after:page}svg:last-child{break-after:auto}@media print{body{margin:0}svg{width:'+w+'mm;height:'+h+'mm;max-width:none}@page{size:'+w+'mm '+h+'mm;margin:0}}</style></head><body>'+pages.join('')+'</body></html>';if(download(html,safeName(project.name)+' - Saved explanations.html','text/html'))tell('Separate saved explanations pages exported for the current arrangement. Open the HTML to read or print them.');};
+$('#export-explanations').onclick=()=>{if(!contentReady())return;const snap=S.snapshot(project),pages=S.explanationPages(snap,project.print.paper),{w,h}=C.PAPERS[project.print.paper];const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><title>Saved explanations</title><style>svg{display:block;max-width:100%;height:auto;margin:auto;break-after:page}svg:last-child{break-after:auto}@media print{body{margin:0}svg{width:'+w+'mm;height:'+h+'mm;max-width:none}@page{size:'+w+'mm '+h+'mm;margin:0}}</style></head><body>'+pages.join('')+'
+<script>
+(function() {
+  var btn = document.getElementById('download-app');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], {type: 'text/html'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'little-connections.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  });
+})();
+</script>
+</body></html>';if(download(html,safeName(project.name)+' - Saved explanations.html','text/html'))tell('Separate saved explanations pages exported for the current arrangement. Open the HTML to read or print them.');};
 $('#print-board').onclick=()=>{if(!contentReady())return;exportSnapshot=S.snapshot(project);printIntent='board';if(!prepareBoardPrint()){printIntent=null;return;}try{window.print();}catch(error){$('#print-root').innerHTML='';tell('The browser could not open printing. No PDF was generated. Your board is unchanged.',true);}finally{printIntent=null;}};
 $('#present').onclick=()=>present(!document.body.classList.contains('board-focus'));document.addEventListener('keydown',e=>{if(e.key==='Escape')present(false);if((e.ctrlKey||e.metaKey)&&!e.target.closest('input,textarea,select,[contenteditable="true"]')){if(e.key.toLowerCase()==='z'){e.preventDefault();undo(e.shiftKey);}else if(e.key.toLowerCase()==='y'){e.preventDefault();undo(true);}}});
 window.addEventListener('beforeunload',e=>{if(unsavedProject){e.preventDefault();e.returnValue='';}});
