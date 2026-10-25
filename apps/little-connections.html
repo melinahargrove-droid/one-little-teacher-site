@@ -397,24 +397,9 @@ function prepareBoardPrint(){
  const snap=exportSnapshot||S.snapshot(project),svg=S.boardSVG(snap);$('#print-root').innerHTML='<div class="print-page board-snapshot-page">'+svg+'</div>'+( $('#board-explanations').checked?S.explanationPages(snap,project.print.paper).map(s=>'<div class="print-page">'+s+'</div>').join(''):'');return true;
 }
 $('#export-board').onclick=()=>{if(!contentReady())return;exportSnapshot=S.snapshot(project);if(download(S.boardSVG(exportSnapshot),safeName(project.name)+' - '+safeName(arrangement().name)+'.svg','image/svg+xml'))tell('Board SVG exported from the selected arrangement. Use Download saved explanations pages for a separate sheet.');};
-$('#export-explanations').onclick=()=>{if(!contentReady())return;const snap=S.snapshot(project),pages=S.explanationPages(snap,project.print.paper),{w,h}=C.PAPERS[project.print.paper];const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><title>Saved explanations</title><style>svg{display:block;max-width:100%;height:auto;margin:auto;break-after:page}svg:last-child{break-after:auto}@media print{body{margin:0}svg{width:'+w+'mm;height:'+h+'mm;max-width:none}@page{size:'+w+'mm '+h+'mm;margin:0}}</style></head><body>'+pages.join('')+'
-<script>
-(function() {
-  var btn = document.getElementById('download-app');
-  if (!btn) return;
-  btn.addEventListener('click', function() {
-    var blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], {type: 'text/html'});
-    var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'little-connections.html';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(a.href);
-  });
-})();
-</script>
-</body></html>';if(download(html,safeName(project.name)+' - Saved explanations.html','text/html'))tell('Separate saved explanations pages exported for the current arrangement. Open the HTML to read or print them.');};
+// Keep the app download handler in executable code, never inside exported HTML.
+$('#download-app').onclick=()=>download('<!DOCTYPE html>\n'+document.documentElement.outerHTML,'little-connections.html','text/html');
+$('#export-explanations').onclick=()=>{if(!contentReady())return;const snap=S.snapshot(project),pages=S.explanationPages(snap,project.print.paper),{w,h}=C.PAPERS[project.print.paper];const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><title>Saved explanations</title><style>svg{display:block;max-width:100%;height:auto;margin:auto;break-after:page}svg:last-child{break-after:auto}@media print{body{margin:0}svg{width:'+w+'mm;height:'+h+'mm;max-width:none}@page{size:'+w+'mm '+h+'mm;margin:0}}</style></head><body>'+pages.join('')+'</body></html>';if(download(html,safeName(project.name)+' - Saved explanations.html','text/html'))tell('Separate saved explanations pages exported for the current arrangement. Open the HTML to read or print them.');};
 $('#print-board').onclick=()=>{if(!contentReady())return;exportSnapshot=S.snapshot(project);printIntent='board';if(!prepareBoardPrint()){printIntent=null;return;}try{window.print();}catch(error){$('#print-root').innerHTML='';tell('The browser could not open printing. No PDF was generated. Your board is unchanged.',true);}finally{printIntent=null;}};
 $('#present').onclick=()=>present(!document.body.classList.contains('board-focus'));document.addEventListener('keydown',e=>{if(e.key==='Escape')present(false);if((e.ctrlKey||e.metaKey)&&!e.target.closest('input,textarea,select,[contenteditable="true"]')){if(e.key.toLowerCase()==='z'){e.preventDefault();undo(e.shiftKey);}else if(e.key.toLowerCase()==='y'){e.preventDefault();undo(true);}}});
 window.addEventListener('beforeunload',e=>{if(unsavedProject){e.preventDefault();e.returnValue='';}});
