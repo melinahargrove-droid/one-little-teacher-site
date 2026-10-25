@@ -59,6 +59,7 @@ button:focus-visible{outline:4px solid #174e83;outline-offset:3px}
  #counter{position:fixed;bottom:68px;right:12px;font-size:14px;padding:8px 12px;border-radius:14px}
 }
 @media(max-width:1000px){#reset,#screenButton,#counter{font-size:max(10px,1.25cqw);padding:.65cqw 1.1cqw;border-width:1px}}
+@media(orientation:portrait){#reset,#screenButton,#counter{font-size:14px;padding:8px 12px}}
 @media(prefers-reduced-motion:reduce){#mouse.celebrate,#easelTap.ready{animation:none}.party-paw,.easel-paw{animation:none;opacity:1}}
 
 </style></head><body><main id="game" aria-label="Mouse Paint Color Splash interactive game"><img id="bg" alt="Watercolor art studio with red, yellow, and blue paint jars and a blank easel"><button id="home" class="control" aria-label="Home and how to play" title="Home and how to play"></button><button id="listen" class="control" aria-label="Listen to instruction" title="Listen"></button><button id="next" class="control" aria-label="Next turn" title="Next"></button><button id="red" class="jar" aria-label="Choose red paint"></button><button id="yellow" class="jar" aria-label="Choose yellow paint"></button><button id="blue" class="jar" aria-label="Choose blue paint"></button><button id="easelTap" aria-label="Tap the color panel to reveal the mixed color" title="Tap to reveal"></button><div id="status" role="status" aria-live="polite"></div><img id="mouse" alt="" aria-hidden="true"><img id="effect" alt="" aria-hidden="true"><div id="formula" aria-live="polite"></div><div id="footprints" aria-hidden="true"></div><div id="easelPrints" aria-hidden="true"></div><div id="teacherTools"><button id="reset" aria-label="Open teacher settings">Teacher</button><button id="screenButton" aria-label="Toggle full screen">Full Screen</button></div><div id="counter">Turn 1 of 20</div><div id="modal" class="modalBackdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle">Teacher settings</h2><div id="modalBody"></div><button id="fullScreenBtn">Full Screen</button><button id="close">Done</button></section></div></main><script>
@@ -198,7 +199,7 @@ function choose(c){
    busy=false;waitingForEasel=true;
    $('easelTap').innerHTML='<span class="reveal-pair"><img src="'+ASSETS['splash_'+a]+'" alt="'+a+'"><span>+</span><img src="'+ASSETS['splash_'+b]+'" alt="'+b+'"><span>= ?</span></span><strong>Tap to Reveal!</strong>';
    $('easelTap').classList.add('ready');
-   $('status').classList.remove('show');
+   $('status').classList.remove('show');$('status').textContent='';
    
    speakAfterCurrent('What color will he be? Tap the color panel!');
  },950);
@@ -207,7 +208,7 @@ function revealOnEasel(){
  if(!waitingForEasel||busy||picks.length!==2)return;
  const [a,b]=picks;const result=mix[[a,b].sort().join('+')];
  waitingForEasel=false;busy=true;$('easelTap').classList.remove('ready');
- $('status').classList.remove('show');
+ $('status').classList.remove('show');$('status').textContent='';
  // The head stays in the second paint color until the reveal; change to the mixed color as the jump begins.
  mousePose('jumping',centers[b],33.8,result);
  $('mouse').classList.add('big-reveal');
@@ -220,10 +221,10 @@ function revealOnEasel(){
    $('formula').dataset.color=result;$('formula').classList.add('shown');speak(a+' and '+b+' make '+result+'!');busy=false;$('next').disabled=false;
  },950);
 }
-function newTurn(){$('next').disabled=true;clearTimers();stopAudio();picks=[];busy=false;ended=false;waitingForEasel=false;$('easelTap').classList.remove('ready');['red','yellow','blue'].forEach(c=>{$(c).classList.remove('selected');$(c).setAttribute('aria-pressed','false')});if(activeMouseAnimation){activeMouseAnimation.cancel();activeMouseAnimation=null}$('mouse').className='';$('mouse').style.width='';$('mouse').style.height='';$('mouse').removeAttribute('src');$('mouse').dataset.pose='';tintMouse('plain');$('effect').classList.remove('reveal');$('formula').classList.remove('shown');$('formula').innerHTML='';$('formula').removeAttribute('data-color');$('footprints').innerHTML='';$('easelPrints').innerHTML='';$('easelPrints').removeAttribute('data-color');$('easelTap').innerHTML='';$('status').classList.remove('show');$('counter').textContent='Turn '+round+' of '+total}
+function newTurn(){$('next').disabled=true;clearTimers();stopAudio();picks=[];busy=false;ended=false;waitingForEasel=false;$('easelTap').classList.remove('ready');['red','yellow','blue'].forEach(c=>{$(c).classList.remove('selected');$(c).setAttribute('aria-pressed','false')});if(activeMouseAnimation){activeMouseAnimation.cancel();activeMouseAnimation=null}$('mouse').className='';$('mouse').style.width='';$('mouse').style.height='';$('mouse').removeAttribute('src');$('mouse').dataset.pose='';tintMouse('plain');$('effect').classList.remove('reveal');$('formula').classList.remove('shown');$('formula').innerHTML='';$('formula').removeAttribute('data-color');$('footprints').innerHTML='';$('easelPrints').innerHTML='';$('easelPrints').removeAttribute('data-color');$('easelTap').innerHTML='';$('status').classList.remove('show');$('status').textContent='';$('counter').textContent='Turn '+round+' of '+total}
 function next(){
 if(busy||waitingForEasel||!document.getElementById('formula').classList.contains('shown'))return;
-if(round>=total){ended=true;openModal('Everyone had a turn!','<p>You completed '+total+' turns!</p><button id="playAgain">Play Again</button>');document.getElementById('playAgain').onclick=()=>{round=1;newTurn();closeModal()};return;}
+if(round>=total){ended=true;openModal('Everyone had a turn!','<p>You completed '+total+' '+(total===1?'turn':'turns')+'!</p><button id="playAgain">Play Again</button>');document.getElementById('playAgain').onclick=()=>{round=1;newTurn();closeModal()};return;}
 round++;newTurn();}
 let modalReturnFocus=null;
 function openModal(title,html){
