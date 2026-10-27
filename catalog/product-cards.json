@@ -716,7 +716,7 @@
     "page": "tiny-tools",
     "key": "random-name-picker",
     "title": "Random Name Picker",
-    "summary": "YOU’RE UP! Avery PARTICIPATION Random Name Picker Choose names fairly for turns and classroom activities.",
+    "summary": "Choose names fairly for turns and classroom activities.",
     "attrs": {
       "data-cat": "Participation",
       "data-name": "random name picker"
