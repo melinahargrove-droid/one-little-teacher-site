@@ -298,7 +298,7 @@
     "page": "little-play",
     "key": "math-fact-friends",
     "title": "Math Fact Friends",
-    "summary": "Math Fact Friends Build fluency!",
+    "summary": "Build fluency!",
     "attrs": {
       "data-grades": "k 1 2 3",
       "data-price": "free",
@@ -314,7 +314,7 @@
     "page": "little-play",
     "key": "graphing-games",
     "title": "Graphing Games",
-    "summary": "🍎 🍎 🍎 2 votes 4 votes 6 votes Graphing Games Collect, compare, graph!",
+    "summary": "Collect, compare, graph!",
     "attrs": {
       "data-grades": "k 1 2 3 4 5",
       "data-price": "free",
