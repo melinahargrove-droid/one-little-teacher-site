@@ -1,0 +1,891 @@
+[
+  {
+    "page": "index",
+    "key": "little-labels",
+    "title": "Little Labels",
+    "summary": "Create beautiful labels for an organized classroom.",
+    "attrs": {
+      "data-category": "solutions"
+    },
+    "links": [],
+    "category": "LITTLE SOLUTIONS",
+    "priceLabel": "$2.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor blank classroom tags, storage basket and pencil."
+  },
+  {
+    "page": "index",
+    "key": "little-connections",
+    "title": "Little Connections",
+    "summary": "Build interactive concept boards — vocab, word walls, big ideas.",
+    "attrs": {
+      "data-category": "solutions"
+    },
+    "links": [],
+    "category": "LITTLE SOLUTIONS",
+    "priceLabel": "$4.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor concept board linking nature picture cards."
+  },
+  {
+    "page": "index",
+    "key": "little-math",
+    "title": "Little Math",
+    "summary": "Place value, operations, fractions & compound shapes — the complete math toolkit.",
+    "attrs": {
+      "data-category": "solutions"
+    },
+    "links": [],
+    "category": "LITTLE SOLUTIONS",
+    "priceLabel": "$4.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor wooden math blocks, fraction pieces and shape tiles."
+  },
+  {
+    "page": "index",
+    "key": "little-maps",
+    "title": "Little Maps",
+    "summary": "Create maps, teach geography, and make map activities — 9 base maps included.",
+    "attrs": {
+      "data-category": "solutions"
+    },
+    "links": [],
+    "category": "LITTLE SOLUTIONS",
+    "priceLabel": "$4.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustrated map, compass and colored pencils."
+  },
+  {
+    "page": "index",
+    "key": "little-artists",
+    "title": "Little Artists",
+    "summary": "Step-by-step drawing and hands-on art activities.",
+    "attrs": {
+      "data-category": "creations"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "#little-creations"
+        },
+        "text": "Explore collection →"
+      }
+    ],
+    "category": "LITTLE CREATIONS",
+    "priceLabel": "Printable pack planned",
+    "status": "collection-preview",
+    "alt": "Watercolor easel, flower painting, brushes and palette."
+  },
+  {
+    "page": "index",
+    "key": "visual-timer",
+    "title": "Visual Timer",
+    "summary": "Help children see time passing.",
+    "attrs": {
+      "data-category": "tools"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "tiny-tools.html"
+        },
+        "text": "Explore collection →"
+      }
+    ],
+    "category": "TINY TOOLS",
+    "priceLabel": "Free tool",
+    "status": "collection-preview",
+    "alt": "Watercolor wooden visual timer and hourglass."
+  },
+  {
+    "page": "index",
+    "key": "math-fact-friends",
+    "title": "Math Fact Friends",
+    "summary": "Practice addition and subtraction with colorful, optional counting objects.",
+    "attrs": {
+      "data-category": "play"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "little-play.html"
+        },
+        "text": "Explore collection →"
+      }
+    ],
+    "category": "LITTLE PLAY",
+    "priceLabel": "Free game in development",
+    "status": "collection-preview",
+    "alt": "Watercolor illustration for Math Fact Friends"
+  },
+  {
+    "page": "index",
+    "key": "little-library",
+    "title": "Little Library",
+    "summary": "Keep classroom books organized and easy to find.",
+    "attrs": {
+      "data-category": "solutions"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "#little-solutions"
+        },
+        "text": "Explore collection →"
+      }
+    ],
+    "category": "LITTLE SOLUTIONS",
+    "priceLabel": "In development",
+    "status": "collection-preview",
+    "alt": "Watercolor wooden basket of classroom books."
+  },
+  {
+    "page": "index",
+    "key": "little-chefs",
+    "title": "Little Chefs",
+    "summary": "Cooking-inspired activities for curious little learners.",
+    "attrs": {
+      "data-category": "creations"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "#little-creations"
+        },
+        "text": "Explore collection →"
+      }
+    ],
+    "category": "LITTLE CREATIONS",
+    "priceLabel": "Printable pack planned",
+    "status": "collection-preview",
+    "alt": "Watercolor mixing bowl, spoon, apron and vegetables."
+  },
+  {
+    "page": "little-play",
+    "key": "mouse-paint",
+    "title": "Mouse Paint",
+    "summary": "Mix colors with Mouse. Color Splash!",
+    "attrs": {
+      "id": "mouse-paint",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "games/mouse-paint.html",
+          "class": "mini-price is-free",
+          "style": "text-decoration:none;display:inline-block;"
+        },
+        "text": "▶ Play Free"
+      },
+      {
+        "attrs": {
+          "href": "games/mouse-paint.html",
+          "download": "Mouse-Paint-Color-Splash.html",
+          "style": "display:inline-block;margin-top:8px;font-size:12px;text-decoration:underline;"
+        },
+        "text": "Download free game"
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Mouse Paint"
+  },
+  {
+    "page": "little-play",
+    "key": "count-the-objects",
+    "title": "Count the Objects",
+    "summary": "Count the objects, pick the number!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "games/everyday-counting-objects.html",
+          "class": "mini-price is-free",
+          "style": "text-decoration:none; display:inline-block;"
+        },
+        "text": "▶ Play Free"
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Count the Objects"
+  },
+  {
+    "page": "little-play",
+    "key": "make-a-number",
+    "title": "Make a Number",
+    "summary": "Tap to add, build the target number!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "games/everyday-make-a-number.html",
+          "class": "mini-price is-free",
+          "style": "text-decoration:none; display:inline-block;"
+        },
+        "text": "▶ Play Free"
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Make a Number"
+  },
+  {
+    "page": "little-play",
+    "key": "match-the-amount",
+    "title": "Match the Amount",
+    "summary": "Find the group with just the right amount!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "games/everyday-match-the-amount.html",
+          "class": "mini-price is-free",
+          "style": "text-decoration:none; display:inline-block;"
+        },
+        "text": "▶ Play Free"
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Match the Amount"
+  },
+  {
+    "page": "little-play",
+    "key": "which-has-more",
+    "title": "Which Has More?",
+    "summary": "More or fewer? You decide!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "games/everyday-which-has-more.html",
+          "class": "mini-price is-free",
+          "style": "text-decoration:none; display:inline-block;"
+        },
+        "text": "▶ Play Free"
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Which Has More?"
+  },
+  {
+    "page": "little-play",
+    "key": "math-fact-friends",
+    "title": "Math Fact Friends",
+    "summary": "Math Fact Friends Build fluency!",
+    "attrs": {
+      "data-grades": "k 1 2 3",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor illustration for Math Fact Friends"
+  },
+  {
+    "page": "little-play",
+    "key": "graphing-games",
+    "title": "Graphing Games",
+    "summary": "🍎 🍎 🍎 2 votes 4 votes 6 votes Graphing Games Collect, compare, graph!",
+    "attrs": {
+      "data-grades": "k 1 2 3 4 5",
+      "data-price": "free",
+      "data-skill": "graphing"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor illustration for Graphing Games"
+  },
+  {
+    "page": "little-play",
+    "key": "shape-adventure",
+    "title": "Shape Adventure",
+    "summary": "Explore shapes!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor illustration for Shape Adventure"
+  },
+  {
+    "page": "little-play",
+    "key": "sound-boxes",
+    "title": "Sound Boxes",
+    "summary": "Hear and match!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor illustration for Sound Boxes"
+  },
+  {
+    "page": "little-play",
+    "key": "letter-match",
+    "title": "Letter Match",
+    "summary": "Find the letters!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor illustration for Letter Match"
+  },
+  {
+    "page": "little-play",
+    "key": "pattern-play",
+    "title": "Pattern Play",
+    "summary": "Make the pattern!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor wooden beads in a repeating coral, sage and blue pattern."
+  },
+  {
+    "page": "little-play",
+    "key": "number-bubbles",
+    "title": "Number Bubbles",
+    "summary": "Pop the numbers!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor bubbles holding small groups of colored counting beads."
+  },
+  {
+    "page": "little-play",
+    "key": "nature-arrangement-studio",
+    "title": "Nature Arrangement Studio",
+    "summary": "Arrange nature treasures!",
+    "attrs": {
+      "data-grades": "prek k 1",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99 planned",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Nature Arrangement Studio"
+  },
+  {
+    "page": "little-play",
+    "key": "playdough-color-lab",
+    "title": "Playdough Color Lab",
+    "summary": "Mix colors & discover!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99 planned",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Playdough Color Lab"
+  },
+  {
+    "page": "little-play",
+    "key": "vegetable-soup",
+    "title": "Vegetable Soup",
+    "summary": "Cook & count veggies!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99 planned",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Vegetable Soup"
+  },
+  {
+    "page": "little-play",
+    "key": "place-value",
+    "title": "Place Value",
+    "summary": "Build bigger numbers!",
+    "attrs": {
+      "data-grades": "1 2 3 4",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Place Value"
+  },
+  {
+    "page": "little-play",
+    "key": "word-builders",
+    "title": "Word Builders",
+    "summary": "Make and read words!",
+    "attrs": {
+      "data-grades": "k 1 2 3",
+      "data-price": "$1.99",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Word Builders"
+  },
+  {
+    "page": "little-play",
+    "key": "story-sequencing",
+    "title": "Story Sequencing",
+    "summary": "Put it in order!",
+    "attrs": {
+      "data-grades": "k 1 2 3",
+      "data-price": "$1.99",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Story Sequencing"
+  },
+  {
+    "page": "little-play",
+    "key": "measurement-fun",
+    "title": "Measurement Fun",
+    "summary": "Compare and measure!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Measurement Fun"
+  },
+  {
+    "page": "little-play",
+    "key": "map-explorer",
+    "title": "Map Explorer",
+    "summary": "Explore the world!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "$1.99",
+      "data-skill": "social"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor illustration for Map Explorer"
+  },
+  {
+    "page": "little-play",
+    "key": "color-match",
+    "title": "Color Match",
+    "summary": "Match and learn!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor pairs of matching coral, sage and blue peg dolls."
+  },
+  {
+    "page": "little-play",
+    "key": "memory-pairs",
+    "title": "Memory Pairs",
+    "summary": "Find the matches!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor memory tiles with matching rabbit and bear pictures."
+  },
+  {
+    "page": "little-play",
+    "key": "feelings-friends",
+    "title": "Feelings Friends",
+    "summary": "Explore emotions!",
+    "attrs": {
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Watercolor peg dolls showing happy, sad and surprised expressions."
+  },
+  {
+    "page": "little-play",
+    "key": "counting-to-20",
+    "title": "Counting to 20",
+    "summary": "Count and build!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "free",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "Free",
+    "status": "coming-soon",
+    "alt": "Twenty watercolor wooden figures arranged in four rows of five."
+  },
+  {
+    "page": "little-play",
+    "key": "rhyme-time",
+    "title": "Rhyme Time",
+    "summary": "Find the rhyme!",
+    "attrs": {
+      "data-grades": "prek k 1 2",
+      "data-price": "$1.99",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor wooden cat beside a soft sage hat."
+  },
+  {
+    "page": "little-play",
+    "key": "cvc-words",
+    "title": "CVC Words",
+    "summary": "Build CVC words!",
+    "attrs": {
+      "data-grades": "k 1 2 3",
+      "data-price": "$1.99",
+      "data-skill": "literacy"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor wooden cat beside letter tiles spelling CAT."
+  },
+  {
+    "page": "little-play",
+    "key": "telling-time",
+    "title": "Telling Time",
+    "summary": "Learn the clock!",
+    "attrs": {
+      "data-grades": "1 2 3 4",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o’clock."
+  },
+  {
+    "page": "little-play",
+    "key": "coin-counting",
+    "title": "Coin Counting",
+    "summary": "Count the coins!",
+    "attrs": {
+      "data-grades": "1 2 3 4",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "paid-unavailable",
+    "alt": "Watercolor stacks of copper, silver and golden coins with leaf motifs."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "visual-timer",
+    "title": "Visual Timer",
+    "summary": "A clear visual countdown for classroom transitions.",
+    "attrs": {
+      "data-cat": "Routines",
+      "data-name": "visual timer"
+    },
+    "links": [
+      {
+        "attrs": {
+          "class": "layered-open",
+          "href": "tools/visual-timer.html",
+          "rel": "noopener",
+          "target": "_blank"
+        },
+        "text": "Open Tool →"
+      }
+    ],
+    "category": "Routines",
+    "status": "available",
+    "priceLabel": "Free · Offline-friendly",
+    "alt": "Watercolor wooden visual timer and hourglass."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "help-queue",
+    "title": "Help Queue",
+    "summary": "Students tap to join the help line, so everyone gets a turn.",
+    "attrs": {
+      "data-cat": "Management",
+      "data-name": "help queue"
+    },
+    "links": [
+      {
+        "attrs": {
+          "class": "layered-open",
+          "href": "tools/help-queue.html",
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        },
+        "text": "Open Tool →"
+      }
+    ],
+    "category": "Management",
+    "status": "available",
+    "priceLabel": "Free · Offline-friendly",
+    "alt": "Watercolor classroom figures waiting in an orderly line."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "random-name-picker",
+    "title": "Random Name Picker",
+    "summary": "YOU’RE UP! Avery PARTICIPATION Random Name Picker Choose names fairly for turns and classroom activities.",
+    "attrs": {
+      "data-cat": "Participation",
+      "data-name": "random name picker"
+    },
+    "links": [
+      {
+        "attrs": {
+          "class": "layered-open",
+          "href": "tools/random-name-picker.html",
+          "rel": "noopener",
+          "target": "_blank"
+        },
+        "text": "Open Tool →"
+      }
+    ],
+    "category": "Participation",
+    "status": "available",
+    "priceLabel": "Free · Offline-friendly",
+    "alt": "Watercolor selection sticks in a cup beside classroom figures."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "make-groups",
+    "title": "Make Groups",
+    "summary": "Quickly organize student groups and partners, then shuffle for a fresh mix.",
+    "attrs": {
+      "data-cat": "Participation",
+      "data-name": "make groups",
+      "id": "make-groups"
+    },
+    "links": [
+      {
+        "attrs": {
+          "class": "layered-open",
+          "href": "tiny-tools/make-groups.html",
+          "target": "_blank",
+          "rel": "noopener",
+          "aria-label": "Open Make Groups free tool"
+        },
+        "text": "Open Tool →"
+      },
+      {
+        "attrs": {
+          "class": "make-groups-download",
+          "href": "tiny-tools/make-groups.html",
+          "download": "Make-Groups.html"
+        },
+        "text": "Download for offline use"
+      }
+    ],
+    "category": "Participation",
+    "status": "available",
+    "priceLabel": "Free · Offline-friendly",
+    "alt": "Watercolor illustration for Make Groups"
+  },
+  {
+    "page": "tiny-tools",
+    "key": "first-then",
+    "title": "First Then",
+    "summary": "Show children the next two steps clearly.",
+    "attrs": {
+      "data-cat": "Routines",
+      "data-name": "first then"
+    },
+    "links": [],
+    "category": "Routines",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor activity cards showing tidy-up followed by play."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "sound-boxes",
+    "title": "Sound Boxes",
+    "summary": "Interactive phonemic-awareness practice.",
+    "attrs": {
+      "data-cat": "Learning",
+      "data-name": "sound boxes"
+    },
+    "links": [],
+    "category": "Learning",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor illustration for Sound Boxes"
+  },
+  {
+    "page": "tiny-tools",
+    "key": "graph-maker",
+    "title": "Graph Maker",
+    "summary": "Build and display classroom graphs.",
+    "attrs": {
+      "data-cat": "Learning",
+      "data-name": "graph maker"
+    },
+    "links": [],
+    "category": "Learning",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor columns of wooden graph tiles and pencil."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "math-facts-flash",
+    "title": "Math Facts Flash",
+    "summary": "Practice math facts with a classroom display.",
+    "attrs": {
+      "data-cat": "Learning",
+      "data-name": "math facts flash"
+    },
+    "links": [],
+    "category": "Learning",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor dot flashcards and counting cubes."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "quick-poll",
+    "title": "Quick Poll",
+    "summary": "Gather and show classroom responses.",
+    "attrs": {
+      "data-cat": "Participation",
+      "data-name": "quick poll"
+    },
+    "links": [],
+    "category": "Participation",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor classroom figures with voting tokens and cups."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "classroom-scoreboard",
+    "title": "Classroom Scoreboard",
+    "summary": "Display scores for classroom activities.",
+    "attrs": {
+      "data-cat": "Management",
+      "data-name": "classroom scoreboard"
+    },
+    "links": [],
+    "category": "Management",
+    "status": "coming-soon",
+    "priceLabel": "Coming soon",
+    "alt": "Watercolor wooden flip-card scoreboard and team counters."
+  },
+  {
+    "page": "tiny-tools",
+    "key": "printable-paper-maker",
+    "title": "Printable Paper Maker",
+    "summary": "Make practical printable paper layouts.",
+    "attrs": {
+      "data-cat": "Learning",
+      "data-name": "printable paper maker"
+    },
+    "links": [
+      {
+        "attrs": {
+          "class": "layered-open",
+          "href": "tiny-tools/printable-paper-maker.html",
+          "target": "_blank",
+          "rel": "noopener",
+          "aria-label": "Open Printable Paper Maker free tool"
+        },
+        "text": "Open Tool →"
+      }
+    ],
+    "category": "Learning",
+    "status": "available",
+    "priceLabel": "Free · Offline-friendly",
+    "alt": "Watercolor illustration for Printable Paper Maker"
+  }
+]
