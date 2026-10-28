@@ -17,42 +17,63 @@
     "page": "index",
     "key": "little-connections",
     "title": "Little Connections",
-    "summary": "Build interactive concept boards — vocab, word walls, big ideas.",
+    "summary": "Build interactive concept boards \u2014 vocab, word walls, big ideas.",
     "attrs": {
       "data-category": "solutions"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/4gMaEYfzPeJR0PW0vR6AM06"
+        }
+      }
+    ],
     "category": "LITTLE SOLUTIONS",
     "priceLabel": "$4.99",
-    "status": "paid-unavailable",
+    "status": "available",
     "alt": "Watercolor concept board linking nature picture cards."
   },
   {
     "page": "index",
     "key": "little-math",
     "title": "Little Math",
-    "summary": "Place value, operations, fractions & compound shapes — the complete math toolkit.",
+    "summary": "Place value, operations, fractions & compound shapes \u2014 the complete math toolkit.",
     "attrs": {
       "data-category": "solutions"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/3cIbJ2bjz0T1dCIa6r6AM07"
+        }
+      }
+    ],
     "category": "LITTLE SOLUTIONS",
     "priceLabel": "$4.99",
-    "status": "paid-unavailable",
+    "status": "available",
     "alt": "Watercolor wooden math blocks, fraction pieces and shape tiles."
   },
   {
     "page": "index",
     "key": "little-maps",
     "title": "Little Maps",
-    "summary": "Create maps, teach geography, and make map activities — 9 base maps included.",
+    "summary": "Create maps, teach geography, and make map activities \u2014 9 base maps included.",
     "attrs": {
       "data-category": "solutions"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/8x29AUbjz59h2Y492n6AM08"
+        }
+      }
+    ],
     "category": "LITTLE SOLUTIONS",
     "priceLabel": "$4.99",
-    "status": "paid-unavailable",
+    "status": "available",
     "alt": "Watercolor illustrated map, compass and colored pencils."
   },
   {
@@ -68,7 +89,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -89,7 +110,7 @@
         "attrs": {
           "href": "tiny-tools.html"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "TINY TOOLS",
@@ -110,7 +131,7 @@
         "attrs": {
           "href": "little-play.html"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE PLAY",
@@ -131,7 +152,7 @@
         "attrs": {
           "href": "#little-solutions"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE SOLUTIONS",
@@ -152,7 +173,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -178,7 +199,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none;display:inline-block;"
         },
-        "text": "▶ Play Free"
+        "text": "\u25b6 Play Free"
       },
       {
         "attrs": {
@@ -211,7 +232,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "▶ Play Free"
+        "text": "\u25b6 Play Free"
       }
     ],
     "category": "Little Play",
@@ -236,7 +257,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "▶ Play Free"
+        "text": "\u25b6 Play Free"
       }
     ],
     "category": "Little Play",
@@ -261,7 +282,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "▶ Play Free"
+        "text": "\u25b6 Play Free"
       }
     ],
     "category": "Little Play",
@@ -286,7 +307,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "▶ Play Free"
+        "text": "\u25b6 Play Free"
       }
     ],
     "category": "Little Play",
@@ -416,10 +437,17 @@
       "data-price": "$1.99",
       "data-skill": "math"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/7sY7sMevLfNV9mscez6AM03"
+        }
+      }
+    ],
     "category": "Little Play",
-    "priceLabel": "$1.99 planned",
-    "status": "paid-unavailable",
+    "priceLabel": "$1.99",
+    "status": "available",
     "alt": "Watercolor illustration for Nature Arrangement Studio"
   },
   {
@@ -432,10 +460,17 @@
       "data-price": "$1.99",
       "data-skill": "math"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/eVqbJ2drHgRZfKQdiD6AM04"
+        }
+      }
+    ],
     "category": "Little Play",
-    "priceLabel": "$1.99 planned",
-    "status": "paid-unavailable",
+    "priceLabel": "$1.99",
+    "status": "available",
     "alt": "Watercolor illustration for Playdough Color Lab"
   },
   {
@@ -448,10 +483,17 @@
       "data-price": "$1.99",
       "data-skill": "math"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/28EdRa3R76dl0PW0vR6AM05"
+        }
+      }
+    ],
     "category": "Little Play",
-    "priceLabel": "$1.99 planned",
-    "status": "paid-unavailable",
+    "priceLabel": "$1.99",
+    "status": "available",
     "alt": "Watercolor illustration for Vegetable Soup"
   },
   {
@@ -644,7 +686,7 @@
     "category": "Little Play",
     "priceLabel": "$1.99",
     "status": "paid-unavailable",
-    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o’clock."
+    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o\u2019clock."
   },
   {
     "page": "little-play",
@@ -679,12 +721,12 @@
           "rel": "noopener",
           "target": "_blank"
         },
-        "text": "Open Tool →"
+        "text": "Open Tool \u2192"
       }
     ],
     "category": "Routines",
     "status": "available",
-    "priceLabel": "Free · Offline-friendly",
+    "priceLabel": "Free \u00b7 Offline-friendly",
     "alt": "Watercolor wooden visual timer and hourglass."
   },
   {
@@ -704,12 +746,12 @@
           "rel": "noopener noreferrer",
           "target": "_blank"
         },
-        "text": "Open Tool →"
+        "text": "Open Tool \u2192"
       }
     ],
     "category": "Management",
     "status": "available",
-    "priceLabel": "Free · Offline-friendly",
+    "priceLabel": "Free \u00b7 Offline-friendly",
     "alt": "Watercolor classroom figures waiting in an orderly line."
   },
   {
@@ -729,12 +771,12 @@
           "rel": "noopener",
           "target": "_blank"
         },
-        "text": "Open Tool →"
+        "text": "Open Tool \u2192"
       }
     ],
     "category": "Participation",
     "status": "available",
-    "priceLabel": "Free · Offline-friendly",
+    "priceLabel": "Free \u00b7 Offline-friendly",
     "alt": "Watercolor selection sticks in a cup beside classroom figures."
   },
   {
@@ -756,7 +798,7 @@
           "rel": "noopener",
           "aria-label": "Open Make Groups free tool"
         },
-        "text": "Open Tool →"
+        "text": "Open Tool \u2192"
       },
       {
         "attrs": {
@@ -769,7 +811,7 @@
     ],
     "category": "Participation",
     "status": "available",
-    "priceLabel": "Free · Offline-friendly",
+    "priceLabel": "Free \u00b7 Offline-friendly",
     "alt": "Watercolor illustration for Make Groups"
   },
   {
@@ -880,12 +922,12 @@
           "rel": "noopener",
           "aria-label": "Open Printable Paper Maker free tool"
         },
-        "text": "Open Tool →"
+        "text": "Open Tool \u2192"
       }
     ],
     "category": "Learning",
     "status": "available",
-    "priceLabel": "Free · Offline-friendly",
+    "priceLabel": "Free \u00b7 Offline-friendly",
     "alt": "Watercolor illustration for Printable Paper Maker"
   }
 ]
