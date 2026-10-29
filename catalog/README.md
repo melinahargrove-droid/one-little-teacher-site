@@ -7,3 +7,7 @@ Edit product-cards.json, then run `python scripts/render-product-cards.py` from 
 Status/actions and pricing are independent. Existing collection-preview cards may link to a collection, not a launched app. Available cards have the exact existing resource links; coming-soon/paid-unavailable have disabled buttons, never checkout URLs. Do not activate paid checkout through this renderer. Preserve filter attrs and IDs. Both downloadable free games/tools retain their download links.
 
 Art is representative illustration, not an app screenshot. Keep meaningful alt text, preserve all titles/descriptions and complete price labels, and check all10 available free resource links after future edits. Future publishers must verify availability rather than infer it from presence of a file in the repository.
+
+## Book Companion Games
+
+Free book companion games use `data-collection: "book-companion"` and category `Book Companion Games`. Keep their grade and skill attributes so the existing filters still work. Add each card only once, to the `book-companion-games` section in little-play.html, using the shared card renderer. Keep free play and download links; do not add placeholder games.

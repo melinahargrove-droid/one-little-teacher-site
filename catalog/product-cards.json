@@ -190,7 +190,8 @@
       "id": "mouse-paint",
       "data-grades": "prek k",
       "data-price": "free",
-      "data-skill": "prek"
+      "data-skill": "prek",
+      "data-collection": "book-companion"
     },
     "links": [
       {
@@ -210,7 +211,7 @@
         "text": "Download free game"
       }
     ],
-    "category": "Little Play",
+    "category": "Book Companion Games",
     "priceLabel": "Free",
     "status": "available",
     "alt": "Watercolor illustration for Mouse Paint"
