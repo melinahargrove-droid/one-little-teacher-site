@@ -7,10 +7,17 @@
     "attrs": {
       "data-category": "solutions"
     },
-    "links": [],
+    "links": [
+      {
+        "text": "Buy Now",
+        "attrs": {
+          "href": "https://buy.stripe.com/7sY14o87n3198io1zV6AM02"
+        }
+      }
+    ],
     "category": "LITTLE SOLUTIONS",
     "priceLabel": "$2.99",
-    "status": "paid-unavailable",
+    "status": "available",
     "alt": "Watercolor blank classroom tags, storage basket and pencil."
   },
   {
