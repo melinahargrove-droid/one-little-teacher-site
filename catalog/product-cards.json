@@ -24,7 +24,7 @@
     "page": "index",
     "key": "little-connections",
     "title": "Little Connections",
-    "summary": "Build interactive concept boards \u2014 vocab, word walls, big ideas.",
+    "summary": "Build interactive concept boards — vocab, word walls, big ideas.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -45,7 +45,7 @@
     "page": "index",
     "key": "little-math",
     "title": "Little Math",
-    "summary": "Place value, operations, fractions & compound shapes \u2014 the complete math toolkit.",
+    "summary": "Place value, operations, fractions & compound shapes — the complete math toolkit.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -66,7 +66,7 @@
     "page": "index",
     "key": "little-maps",
     "title": "Little Maps",
-    "summary": "Create maps, teach geography, and make map activities \u2014 9 base maps included.",
+    "summary": "Create maps, teach geography, and make map activities — 9 base maps included.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -96,7 +96,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection \u2192"
+        "text": "Explore collection →"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -117,7 +117,7 @@
         "attrs": {
           "href": "tiny-tools.html"
         },
-        "text": "Explore collection \u2192"
+        "text": "Explore collection →"
       }
     ],
     "category": "TINY TOOLS",
@@ -138,7 +138,7 @@
         "attrs": {
           "href": "little-play.html"
         },
-        "text": "Explore collection \u2192"
+        "text": "Explore collection →"
       }
     ],
     "category": "LITTLE PLAY",
@@ -159,7 +159,7 @@
         "attrs": {
           "href": "#little-solutions"
         },
-        "text": "Explore collection \u2192"
+        "text": "Explore collection →"
       }
     ],
     "category": "LITTLE SOLUTIONS",
@@ -180,7 +180,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection \u2192"
+        "text": "Explore collection →"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -207,7 +207,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none;display:inline-block;"
         },
-        "text": "\u25b6 Play Free"
+        "text": "▶ Play Free"
       },
       {
         "attrs": {
@@ -240,7 +240,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "\u25b6 Play Free"
+        "text": "▶ Play Free"
       }
     ],
     "category": "Little Play",
@@ -265,7 +265,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "\u25b6 Play Free"
+        "text": "▶ Play Free"
       }
     ],
     "category": "Little Play",
@@ -290,7 +290,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "\u25b6 Play Free"
+        "text": "▶ Play Free"
       }
     ],
     "category": "Little Play",
@@ -315,7 +315,7 @@
           "class": "mini-price is-free",
           "style": "text-decoration:none; display:inline-block;"
         },
-        "text": "\u25b6 Play Free"
+        "text": "▶ Play Free"
       }
     ],
     "category": "Little Play",
@@ -375,16 +375,24 @@
     "page": "little-play",
     "key": "sound-boxes",
     "title": "Sound Boxes",
-    "summary": "Hear and match!",
+    "summary": "Teacher-led phoneme practice with 2–6 sound boxes.",
     "attrs": {
       "data-grades": "prek k 1 2",
       "data-price": "free",
       "data-skill": "literacy"
     },
-    "links": [],
+    "links": [
+      {
+        "attrs": {
+          "href": "products/sound-boxes.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
     "category": "Little Play",
     "priceLabel": "Free",
-    "status": "coming-soon",
+    "status": "available",
     "alt": "Watercolor illustration for Sound Boxes"
   },
   {
@@ -694,7 +702,7 @@
     "category": "Little Play",
     "priceLabel": "$1.99",
     "status": "paid-unavailable",
-    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o\u2019clock."
+    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o’clock."
   },
   {
     "page": "little-play",
@@ -729,12 +737,12 @@
           "rel": "noopener",
           "target": "_blank"
         },
-        "text": "Open Tool \u2192"
+        "text": "Open Tool →"
       }
     ],
     "category": "Routines",
     "status": "available",
-    "priceLabel": "Free \u00b7 Offline-friendly",
+    "priceLabel": "Free · Offline-friendly",
     "alt": "Watercolor wooden visual timer and hourglass."
   },
   {
@@ -754,12 +762,12 @@
           "rel": "noopener noreferrer",
           "target": "_blank"
         },
-        "text": "Open Tool \u2192"
+        "text": "Open Tool →"
       }
     ],
     "category": "Management",
     "status": "available",
-    "priceLabel": "Free \u00b7 Offline-friendly",
+    "priceLabel": "Free · Offline-friendly",
     "alt": "Watercolor classroom figures waiting in an orderly line."
   },
   {
@@ -779,12 +787,12 @@
           "rel": "noopener",
           "target": "_blank"
         },
-        "text": "Open Tool \u2192"
+        "text": "Open Tool →"
       }
     ],
     "category": "Participation",
     "status": "available",
-    "priceLabel": "Free \u00b7 Offline-friendly",
+    "priceLabel": "Free · Offline-friendly",
     "alt": "Watercolor selection sticks in a cup beside classroom figures."
   },
   {
@@ -806,7 +814,7 @@
           "rel": "noopener",
           "aria-label": "Open Make Groups free tool"
         },
-        "text": "Open Tool \u2192"
+        "text": "Open Tool →"
       },
       {
         "attrs": {
@@ -819,7 +827,7 @@
     ],
     "category": "Participation",
     "status": "available",
-    "priceLabel": "Free \u00b7 Offline-friendly",
+    "priceLabel": "Free · Offline-friendly",
     "alt": "Watercolor illustration for Make Groups"
   },
   {
@@ -841,15 +849,23 @@
     "page": "tiny-tools",
     "key": "sound-boxes",
     "title": "Sound Boxes",
-    "summary": "Interactive phonemic-awareness practice.",
+    "summary": "Teacher-led phoneme practice with 2–6 sound boxes.",
     "attrs": {
       "data-cat": "Learning",
       "data-name": "sound boxes"
     },
-    "links": [],
+    "links": [
+      {
+        "attrs": {
+          "href": "products/sound-boxes.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
     "category": "Learning",
-    "status": "coming-soon",
-    "priceLabel": "Coming soon",
+    "status": "available",
+    "priceLabel": "Free",
     "alt": "Watercolor illustration for Sound Boxes"
   },
   {
@@ -930,12 +946,142 @@
           "rel": "noopener",
           "aria-label": "Open Printable Paper Maker free tool"
         },
-        "text": "Open Tool \u2192"
+        "text": "Open Tool →"
       }
     ],
     "category": "Learning",
     "status": "available",
-    "priceLabel": "Free \u00b7 Offline-friendly",
+    "priceLabel": "Free · Offline-friendly",
     "alt": "Watercolor illustration for Printable Paper Maker"
+  },
+  {
+    "page": "little-play",
+    "key": "dogs-spotty-adventure",
+    "title": "Dog’s Spotty Adventure",
+    "summary": "Find colorful messes, count Dog’s spots, and scrub them away.",
+    "attrs": {
+      "id": "dogs-spotty-adventure",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/dogs-spotty-adventure.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Dog’s Spotty Adventure"
+  },
+  {
+    "page": "little-play",
+    "key": "how-many-blew-away",
+    "title": "How Many Blew Away?",
+    "summary": "Take a quick look, watch the leaves blow away, and choose how many you saw.",
+    "attrs": {
+      "id": "how-many-blew-away",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/how-many-blew-away.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for How Many Blew Away?"
+  },
+  {
+    "page": "little-play",
+    "key": "ghostly-glow",
+    "title": "Ghostly Glow",
+    "summary": "Tap a star, grow a little ghost, and enjoy a glowing surprise.",
+    "attrs": {
+      "id": "ghostly-glow",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek",
+      "data-collection": "transition"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/ghostly-glow.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Transition Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Ghostly Glow"
+  },
+  {
+    "page": "little-play",
+    "key": "turkeys-disguise-workshop",
+    "title": "Turkey’s Disguise Workshop",
+    "summary": "Listen to clues and choose pieces for five farm-animal disguises.",
+    "attrs": {
+      "id": "turkeys-disguise-workshop",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/turkeys-disguise-workshop.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Turkey’s Disguise Workshop"
+  },
+  {
+    "page": "little-play",
+    "key": "hedgehogs-color-changing-coat",
+    "title": "Hedgehog’s Color-Changing Coat",
+    "summary": "Take turns revealing autumn colors on Hedgehog’s leafy coat.",
+    "attrs": {
+      "id": "hedgehogs-color-changing-coat",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "prek",
+      "data-collection": "transition"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/hedgehogs-color-changing-coat.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Transition Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor illustration for Hedgehog’s Color-Changing Coat"
   }
 ]

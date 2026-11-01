@@ -1,0 +1,105 @@
+{
+  "little-labels": {
+    "path": "assets/cards/little-labels.webp",
+    "sha256": "c3a70b54665455bd532aae8bc0a04c97a715aece5b56a32bc19719d2dfc2d5b2",
+    "alt": "Scenic watercolor illustration for Little Labels"
+  },
+  "little-connections": {
+    "path": "assets/cards/little-connections.webp",
+    "sha256": "5e44f6ba697197ac42691d712db51508f3f66974b77f486396110c9870effd82",
+    "alt": "Scenic watercolor illustration for Little Connections"
+  },
+  "little-math": {
+    "path": "assets/cards/little-math.webp",
+    "sha256": "610cf33f0cfa58d9f9341d9c4d56a9f168188f090b859b5b170bfd4b296a7b28",
+    "alt": "Scenic watercolor illustration for Little Math"
+  },
+  "little-maps": {
+    "path": "assets/cards/little-maps.webp",
+    "sha256": "d98489a9feee4e47fe5220741d49cf1864e4e83530a802ee0dafda52f2ff472c",
+    "alt": "Scenic watercolor illustration for Little Maps"
+  },
+  "visual-timer": {
+    "path": "assets/cards/visual-timer.webp",
+    "sha256": "8863994c18f0376d44ecf9ec6025ffd95da53947f602a75f9d1376d745c285bc",
+    "alt": "Scenic watercolor illustration for Visual Timer"
+  },
+  "help-queue": {
+    "path": "assets/cards/help-queue.webp",
+    "sha256": "36c248ad6d4faae3eb64f41a130e5cc2e93c95485f49384b659ca7b9f8922b9b",
+    "alt": "Scenic watercolor illustration for Help Queue"
+  },
+  "random-name-picker": {
+    "path": "assets/cards/random-name-picker.webp",
+    "sha256": "a21ca3c980b31f62767463ff962423ad73e7e08afcdf1c035e572c4957ae7b35",
+    "alt": "Scenic watercolor illustration for Random Name Picker"
+  },
+  "make-groups": {
+    "path": "assets/cards/make-groups.webp",
+    "sha256": "0500b34cec182a966237123b1803af8bc07148350c7d3e223f524703e4d52b1a",
+    "alt": "Scenic watercolor illustration for Make Groups"
+  },
+  "printable-paper-maker": {
+    "path": "assets/cards/printable-paper-maker.webp",
+    "sha256": "b4b5bdbf0774e5cb9d2337b9c3dcb703ae2255c05b416a3bee235ce09cdc51ce",
+    "alt": "Scenic watercolor illustration for Printable Paper Maker"
+  },
+  "count-the-objects": {
+    "path": "assets/cards/count-the-objects.webp",
+    "sha256": "4f7eced62c602e5b2da83438af5b45244b019f139fde35480bc7861d2fcb7f3c",
+    "alt": "Scenic watercolor illustration for Count the Objects"
+  },
+  "make-a-number": {
+    "path": "assets/cards/make-a-number.webp",
+    "sha256": "4eef48f1254319dd4cc518e8a34b4486ad256828a0d8a7b138b0c4721891f428",
+    "alt": "Scenic watercolor illustration for Make a Number"
+  },
+  "match-the-amount": {
+    "path": "assets/cards/match-the-amount.webp",
+    "sha256": "70db435156d5ec4c40db0aecf085c6340c9ef731344f5f98c5f26a559797c226",
+    "alt": "Scenic watercolor illustration for Match the Amount"
+  },
+  "which-has-more": {
+    "path": "assets/cards/which-has-more.webp",
+    "sha256": "10cdae564561617360fb3ad40260b51c35c4fe5edcd137e3e1c27514c11d2944",
+    "alt": "Scenic watercolor illustration for Which Has More?"
+  },
+  "mouse-paint": {
+    "path": "assets/cards/mouse-paint.webp",
+    "sha256": "dd394b12cdf3b6ceaa5f791364775b2474bc4dce8163fe14cbfa67f6fe379e30",
+    "alt": "Scenic watercolor illustration for Mouse Paint"
+  },
+  "nature-arrangement-studio": {
+    "path": "assets/cards/nature-arrangement-studio.webp",
+    "sha256": "588a4d41283e44f1a067ba8e1573dfac6b0f093b41ee9a720885f99baeaf3cd4",
+    "alt": "Scenic watercolor illustration for Nature Arrangement Studio"
+  },
+  "playdough-color-lab": {
+    "path": "assets/cards/playdough-color-lab.webp",
+    "sha256": "3a58d34ee178d11173e1a238f56bf5bb02d7bae0b4941fa6c802dad8fcf82998",
+    "alt": "Scenic watercolor illustration for Playdough Color Lab"
+  },
+  "vegetable-soup": {
+    "path": "assets/cards/vegetable-soup.webp",
+    "sha256": "ba72da485c1b5552216a9da36f7d80e54969851a4eaf6ac89a110ca744934819",
+    "alt": "Scenic watercolor illustration for Vegetable Soup"
+  },
+  "dogs-spotty-adventure": {
+    "path": "assets/cards/dogs-spotty-adventure.webp"
+  },
+  "how-many-blew-away": {
+    "path": "assets/cards/how-many-blew-away.webp"
+  },
+  "ghostly-glow": {
+    "path": "assets/cards/ghostly-glow.webp"
+  },
+  "sound-boxes": {
+    "path": "assets/cards/sound-boxes.webp"
+  },
+  "turkeys-disguise-workshop": {
+    "path": "assets/cards/turkeys-disguise-workshop.webp"
+  },
+  "hedgehogs-color-changing-coat": {
+    "path": "assets/cards/hedgehogs-color-changing-coat.webp"
+  }
+}
