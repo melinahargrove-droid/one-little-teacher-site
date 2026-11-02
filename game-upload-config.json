@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "project": "https://ctmqvbsjliinlddfolti.supabase.co",
+  "allowedOrigin": "https://onelittleteacher.com",
+  "callbackURL": "https://onelittleteacher.com/game-upload.html",
+  "publishableKey": "sb_publishable_AYbs6V2u0qPo-jLTkTFlBQ_1ps7DaZC",
+  "uploadReady": false
+}
