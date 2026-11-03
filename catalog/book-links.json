@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "books": [
+    {
+      "id": "mouse-paint",
+      "title": "Mouse Paint",
+      "gameSlugs": [
+        "mouse-paint"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B0imq8ZGJ",
+        "format": "Paperback",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "title, selected format, and affiliate tag confirmed",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "verifiedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Mouse-Paint-Ellen-Stoll-Walsh/dp/0152001182?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.nVnqwVf_srMgtpDySWs_dzkD7kdSjUFo22LK8lmjKpfka_n1gDKFwCXPrZsSBWhHC-A6AHJixjsJHGwjS6iPALT0vyLiJn9KMkLIEMJhT4oqN4N7pKFkfT9ZpcJwAaXha0DTAnwyaHCtlcq7lojrZuM_THWGe8eadWXqiuDQQ0bpguVkojBBljBUuRGxwvcJcau91DTrrdb68ta0YSpBdqrW7IBgNkbhbqos4arSkeQ.PAbVsZ2cTmxD57AkX7G4xFmxgCTXAAGKPdXWrNk-HfA&qid=1793666180&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=2431576bb5e34765f5597bcd361e7838&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-76495ec952427fe0&btn_type=ss&btn_ref=srctok-76495ec952427fe0"
+      },
+      "kindle": {
+        "url": "https://link.amazon/B01oHrKZY",
+        "format": "Kindle",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "Owner confirmed copied from Kindle edition page; redirect and affiliate tag independently observed; final Amazon page returned HTTP 500",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Mouse-Paint-Lap-Sized-Board-Book-ebook/dp/B009P5RL8U?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.nVnqwVf_srMgtpDySWs_dzkD7kdSjUFo22LK8lmjKpfka_n1gDKFwCXPrZsSBWhHC-A6AHJixjsJHGwjS6iPALT0vyLiJn9KMkLIEMJhT4oqN4N7pKFkfT9ZpcJwAaXha0DTAnwyaHCtlcq7lojrZuM_THWGe8eadWXqiuDQQ0bpguVkojBBljBUuRGxwvcJcau91DTrrdb68ta0YSpBdqrW7IBgNkbhbqos4arSkeQ.PAbVsZ2cTmxD57AkX7G4xFmxgCTXAAGKPdXWrNk-HfA&qid=1793666180&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=62efec9ad6cbb7cc53f7c9b43a28bd04&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-0bd0fa79db8a0874&btn_type=ss&btn_ref=srctok-0bd0fa79db8a0874",
+        "verifiedAt": "2026-11-03",
+        "verificationBasis": "owner-confirmed edition provenance"
+      }
+    },
+    {
+      "id": "dogs-colorful-day",
+      "title": "Dog’s Colorful Day",
+      "gameSlugs": [
+        "dogs-spotty-adventure"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B08qBJpG4",
+        "format": "Paperback",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "title, selected format, and affiliate tag confirmed",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "verifiedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Dogs-Colorful-Day-Counting-Picture/dp/0142500194?crid=1LLTERVE48YUU&dib=eyJ2IjoiMSJ9.T3iclAw3avmHPWjrNjRF6pW9hWK47pGW1BVWtWrA7zDnuAtgXHr6oShuAkOVPzVaEQz9AFTKbLjGnF-Jf0ROyVVw8hqApLCYN6nUGUV04JjcF1EhNjNoApU5b2acD8OTzf9fDGt3jRgdm-DxhPgBTB-M070D92IYAjcL90-nIGSknlDYaxgfu5ew2qq4LgmXSvBwwe1vsSUmjqGwuv8uN8frZIlpXVN43FKCcsxF0LU.sIhs9xtFDG2YUuVZHbF0dwIxI5bJyKEq8baB4Aus5Vg&dib_tag=se&keywords=dogs+colorful+day&qid=1793666429&sprefix=dogs+colorfyl+%2Caps%2C470&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=6fd038c37ce8e636ad2e47c9e74d3320&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-29d32d7bf4a88ee6&btn_type=ss&btn_ref=srctok-29d32d7bf4a88ee6"
+      },
+      "kindle": null
+    },
+    {
+      "id": "the-leaf-thief",
+      "title": "The Leaf Thief",
+      "gameSlugs": [
+        "how-many-blew-away"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B0gtiKiP8",
+        "format": "Hardcover",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "title, selected format, and affiliate tag confirmed",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "verifiedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Leaf-Thief-Alice-Hemming/dp/1728235200?crid=WGKPZNQZI6JN&dib=eyJ2IjoiMSJ9.1yBYW5eqMCkSv-CCtOQ4z5PQyUQyIAvGyLQmzyHHJplXdQw_hvSwkYkwIets-umfWQOdhco0o7Qp--K6sCXRhvmyti7pxybkJe_atapiiWhvbFOuWAtT5Fp7x5pyU2-R7gY98NuFXUyf71wil-n_1BxfheLn366atGksrh1rnDg38VuSKHP8tKUXxF6vUkuliJCzHf9cnLp96C_cyVnbdZ4l9HRJLiuzKeNmQcAFffI.lK08p2gAU3Gd_AK3_g9VN246QjN2-maMg6EEgR0mU64&dib_tag=se&keywords=the+leaf+thief&qid=1793666948&sprefix=the+leaf+theif%2Caps%2C222&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=ae0908987bc49d0a123be63c17aeb589&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-57fb780b1f4f86c6&btn_type=ss&btn_ref=srctok-57fb780b1f4f86c6"
+      },
+      "kindle": {
+        "url": "https://link.amazon/B02unSYQM",
+        "format": "Kindle",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "Owner confirmed copied from Kindle edition page; redirect and affiliate tag independently observed; final Amazon page returned HTTP 500",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Leaf-Thief-Perfect-Children-Toddlers-ebook/dp/B097YVXCWF?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.1yBYW5eqMCkSv-CCtOQ4z5PQyUQyIAvGyLQmzyHHJplXdQw_hvSwkYkwIets-umfWQOdhco0o7Qp--K6sCXRhvmyti7pxybkJe_atapiiWhvbFOuWAtT5Fp7x5pyU2-R7gY98NuFXUyf71wil-n_1BxfheLn366atGksrh1rnDg38VuSKHP8tKUXxF6vUkuliJCzHf9cnLp96C_cyVnbdZ4l9HRJLiuzKeNmQcAFffI.lK08p2gAU3Gd_AK3_g9VN246QjN2-maMg6EEgR0mU64&qid=1793666948&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=433e9c599d5bbef01ad2d38093b1acce&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-10107af19ecaffc5&btn_type=ss&btn_ref=srctok-10107af19ecaffc5",
+        "verifiedAt": "2026-11-03",
+        "verificationBasis": "owner-confirmed edition provenance"
+      }
+    },
+    {
+      "id": "turkey-trouble",
+      "title": "Turkey Trouble",
+      "gameSlugs": [
+        "turkeys-disguise-workshop"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B0ieGtCBp",
+        "format": "Hardcover",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "title, selected format, and affiliate tag confirmed",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "verifiedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Turkey-Trouble-Wendi-Silvano/dp/0761455299?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.FzS11h4G0aF6jvTt3zrl90dxlCyfdfjj7yDZUKQiczK0FWc5GG9wEN-S7SmYGFvBK8h5hHgqcKH1UeTnPq63F4Oq5IfaXFBSq5W8q0H1qcVKBg5e1G0FJ3wEmML3DNqlAEEIEr7CDjpV8VArjKfDiGWoYRcGCgxp1bxAwT-7voqtJU1TWOPKo_9NvYoMW9z9SV1dFHSHJCvfVBfwiQN8ZKkfV9nrJy4tffhFdwJImY4.FxdkbiHtuDZVgPnL-Ko5FGQpwcMlo1ojh_kGtnM2eg4&qid=1793666794&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=155c46570b25d366dd33ed734278f203&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-74b6090b724505a9&btn_type=ss&btn_ref=srctok-74b6090b724505a9"
+      },
+      "kindle": {
+        "url": "https://link.amazon/B0cOYUOIE",
+        "format": "Kindle",
+        "verified": true,
+        "destinationVerified": true,
+        "verificationStatus": "Owner confirmed copied from Kindle edition page; redirect and affiliate tag independently observed; final Amazon page returned HTTP 500",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Turkey-Trouble-Wendi-Silvano-ebook/dp/B0085MGA3Q?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.FzS11h4G0aF6jvTt3zrl90dxlCyfdfjj7yDZUKQiczK0FWc5GG9wEN-S7SmYGFvBK8h5hHgqcKH1UeTnPq63F4Oq5IfaXFBSq5W8q0H1qcVKBg5e1G0FJ3wEmML3DNqlAEEIEr7CDjpV8VArjKfDiGWoYRcGCgxp1bxAwT-7voqtJU1TWOPKo_9NvYoMW9z9SV1dFHSHJCvfVBfwiQN8ZKkfV9nrJy4tffhFdwJImY4.FxdkbiHtuDZVgPnL-Ko5FGQpwcMlo1ojh_kGtnM2eg4&qid=1793666794&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=aa5ab677b36039bb1d9b53d6a0cd783a&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-08d7906ddd7393b6&btn_type=ss&btn_ref=srctok-08d7906ddd7393b6",
+        "verifiedAt": "2026-11-03",
+        "verificationBasis": "owner-confirmed edition provenance"
+      }
+    }
+  ],
+  "publicationApproved": true
+}
