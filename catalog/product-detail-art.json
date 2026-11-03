@@ -136,5 +136,10 @@
     "path": "assets/cards/festival-of-colors.png",
     "sha256": "836f273705664231c67c1614c9ccc711e9b017507e0163bf308218c113a15eaa",
     "alt": "Soft watercolor children sorting red, orange, blue and purple petals into bowls"
+  },
+  "leaf-man": {
+    "path": "assets/cards/leaf-man.png",
+    "sha256": "74d947a087c66b9202c26623f358f8686f4dac06d9b7a96d61bb1285de97d17d",
+    "alt": "Soft watercolor Leaf Man made of autumn leaves with a squirrel and songbird"
   }
 }

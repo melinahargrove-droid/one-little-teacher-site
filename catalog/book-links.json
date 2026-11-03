@@ -151,6 +151,41 @@
         "providedBy": "owner",
         "verificationStatus": "Amazon returned HTTP 500; not independently verified"
       }
+    },
+    {
+      "id": "leaf-man",
+      "title": "Leaf Man",
+      "gameSlugs": [
+        "leaf-man"
+      ],
+      "editions": [
+        {
+          "format": "Board Book",
+          "url": "https://link.amazon/B0hglVqrw",
+          "providedBy": "owner",
+          "providedAt": "2026-11-03",
+          "verified": true,
+          "verificationStatus": "Amazon HTTP200: Leaf Man by Lois Ehlert, selected Format: Board Book, and affiliate tag melinasn-20 independently confirmed",
+          "resolvedUrl": "https://www.amazon.com/Leaf-Man-Caldecott-Honor-Winning-Imagination/dp/0063286726?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.-6EmbIG7EpSSU0mSHvM6NS15cSes6jVREM0xFVQnDbAJykTfbvpk0uLyJ_k38fP6V9CuT7FbTjcfOKKps46Fg-JTkqXbAtpv9PB1P1cJBKKuQYZS4gRHB-MimyaSasiFG3TGdbdpjl7VhqqqFA6NXeytGh2pkzSL0JKrnSBdY_x7xJfieIQNwfG1_dsq_ALcftFwqJO5i4vvtwdTjuS9jr-7_YF4xiv3yruN1vo-6as.-8HEAP4M6xIYLWk82vbv42DYAxyJJduLPRY87KPNZ8w&qid=1793672012&sr=1-2-catcorr&linkCode=sl2&tag=melinasn-20&linkId=aa6800a28b1db642e3c304c6402a1e73&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-65ec07b488325f75&btn_type=ss&btn_ref=srctok-65ec07b488325f75",
+          "destinationVerified": true,
+          "affiliateTagVerified": true,
+          "editionVerified": true,
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "format": "Hardcover",
+          "url": "https://link.amazon/B0fZv9uKB",
+          "providedBy": "owner",
+          "providedAt": "2026-11-03",
+          "verified": true,
+          "verificationStatus": "Amazon HTTP200: Leaf Man by Lois Ehlert, selected Format: Hardcover, and affiliate tag melinasn-20 independently confirmed",
+          "resolvedUrl": "https://www.amazon.com/Leaf-Man-Lois-Ehlert/dp/0152053042?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.-6EmbIG7EpSSU0mSHvM6NS15cSes6jVREM0xFVQnDbAJykTfbvpk0uLyJ_k38fP6V9CuT7FbTjcfOKKps46Fg-JTkqXbAtpv9PB1P1cJBKKuQYZS4gRHB-MimyaSasiFG3TGdbdpjl7VhqqqFA6NXeytGh2pkzSL0JKrnSBdY_x7xJfieIQNwfG1_dsq_ALcftFwqJO5i4vvtwdTjuS9jr-7_YF4xiv3yruN1vo-6as.-8HEAP4M6xIYLWk82vbv42DYAxyJJduLPRY87KPNZ8w&qid=1793672012&sr=1-2-catcorr&linkCode=sl2&tag=melinasn-20&linkId=b0e8a6d7a4620beb6702842cf8ee878b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-3ef2f2288a9a6a71&btn_type=ss&btn_ref=srctok-3ef2f2288a9a6a71",
+          "destinationVerified": true,
+          "affiliateTagVerified": true,
+          "editionVerified": true,
+          "verifiedAt": "2026-11-03"
+        }
+      ]
     }
   ],
   "publicationApproved": true

@@ -1255,5 +1255,31 @@
     "priceLabel": "Free",
     "status": "available",
     "alt": "Soft watercolor children sorting red, orange, blue and purple petals into bowls"
+  },
+  {
+    "page": "little-play",
+    "key": "leaf-man",
+    "title": "Leaf Man Story Maker",
+    "summary": "Build a leaf friend, choose an adventure, and watch your own narrated story.",
+    "attrs": {
+      "id": "leaf-man",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "literacy",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/leaf-man.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Soft watercolor Leaf Man made of autumn leaves with a squirrel and songbird"
   }
 ]
