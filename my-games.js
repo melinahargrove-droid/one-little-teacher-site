@@ -1,6 +1,6 @@
 'use strict';
-// LOCAL RELEASE CANDIDATE: insert verified public project key and enable only after delivery gates pass.
-const config = Object.freeze({url:'https://ctmqvbsjliinlddfolti.supabase.co',publishableKey:'sb_publishable_AYbs6V2u0qPo-jLTkTFlBQ_1ps7DaZC',enabled:false});
+// Production customer access; entitlement checks remain server-side.
+const config = Object.freeze({url:'https://ctmqvbsjliinlddfolti.supabase.co',publishableKey:'sb_publishable_AYbs6V2u0qPo-jLTkTFlBQ_1ps7DaZC',enabled:true});
 const $ = id => document.getElementById(id);
 let token = '';
 let sessionRevision = 0, listRevision = 0;
