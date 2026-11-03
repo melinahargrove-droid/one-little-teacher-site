@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://ctmqvbsjliinlddfolti.supabase.co; base-uri 'none'; form-action 'none'">
+<title>My games | One Little Teacher</title><link rel="stylesheet" href="my-games.css"></head>
+<body><header><a href="https://onelittleteacher.com">One Little Teacher</a><span>Little games. Ready for your classroom.</span></header>
+<main><p class="eyebrow">Your classroom collection</p><h1>My games</h1>
+<p>Download your purchased games, then open them whenever your classroom is ready-even without internet.</p>
+<section id="signin"><h2>Welcome back</h2><p>Use the email address you entered at checkout. We'll send a sign-in link to that inbox.</p>
+<form id="email-form"><label for="email">Purchase email</label><input id="email" type="email" autocomplete="email" required maxlength="254"><button type="submit">Email my sign-in link</button></form></section>
+<p id="status" role="status" aria-live="polite">Sign in to access your purchased games.</p>
+<button id="retry-access" class="secondary" hidden>Try loading my games again</button>
+<section id="collection" hidden><div class="section-head"><h2>Your games</h2><button id="signout" class="secondary">Sign out</button></div><div id="games"></div><button id="refresh" class="secondary">Refresh my purchases</button>
+<aside><h2>Ready for offline play</h2><ol><li>Choose Download ZIP and save it to your device.</li><li>Unzip the file, then open the HTML game in your browser.</li><li>Try the game and sound before your lesson.</li></ol><p>Download links expire after two minutes. You can sign in here again to get a fresh link.</p></aside></section>
+</main><footer>One Little Teacher</footer><script src="my-games.js" defer></script></body></html>
