@@ -101,5 +101,30 @@
   },
   "hedgehogs-color-changing-coat": {
     "path": "assets/cards/hedgehogs-color-changing-coat.webp"
+  },
+  "witchs-wacky-wardrobe": {
+    "path": "assets/cards/witchs-wacky-wardrobe.webp",
+    "sha256": "65f477bbaea030d114d3021ff194ae50576e85f64f527d64a4a5da832b113851",
+    "alt": "Illustrated game card for Witch’s Wacky Wardrobe"
+  },
+  "frankies-bandage-boo-boos": {
+    "path": "assets/cards/frankies-bandage-boo-boos.webp",
+    "sha256": "3c1a2d01162ca5309dccc4acefcd8cc805eae04505d032cb2921726d5534f67b",
+    "alt": "Illustrated game card for Frankie’s Bandage Boo-Boos"
+  },
+  "little-town-map-makers": {
+    "path": "assets/cards/little-town-map-makers.webp",
+    "sha256": "630c9e450bd81213ad13b22e2c622519b339767e414055ca664f4d8f28d7d524",
+    "alt": "Illustrated game card for Little Town Map Makers"
+  },
+  "triangle-detectives": {
+    "path": "assets/cards/triangle-detectives.webp",
+    "sha256": "093fd282d2f9a3927e32e020dcefbfc0ec003251bf267b687cce779c7f3ae29f",
+    "alt": "Illustrated game card for Triangle Detectives"
+  },
+  "turkey-pizza-delivery": {
+    "path": "assets/cards/turkey-pizza-delivery.webp",
+    "sha256": "7903d837d9a201da1ceac3ccdd914e475ebcee81244e42d2e0a19e573d97947e",
+    "alt": "Illustrated game card for Turkey’s Pizza Delivery"
   }
 }

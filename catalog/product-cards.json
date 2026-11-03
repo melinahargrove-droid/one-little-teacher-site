@@ -1083,5 +1083,125 @@
     "priceLabel": "Free",
     "status": "available",
     "alt": "Watercolor illustration for Hedgehog’s Color-Changing Coat"
+  },
+  {
+    "page": "little-play",
+    "key": "witchs-wacky-wardrobe",
+    "title": "Witch’s Wacky Wardrobe",
+    "summary": "Find and extend AB, AAB, and ABC clothesline patterns.",
+    "attrs": {
+      "id": "witchs-wacky-wardrobe",
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Buy $1.99",
+        "attrs": {
+          "href": "https://buy.stripe.com/6oUdRa87n8lt2Y45Qb6AM09"
+        }
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "available",
+    "alt": "Illustrated game card for Witch’s Wacky Wardrobe"
+  },
+  {
+    "page": "little-play",
+    "key": "frankies-bandage-boo-boos",
+    "title": "Frankie’s Bandage Boo-Boos",
+    "summary": "Name body parts and follow gentle spoken directions.",
+    "attrs": {
+      "id": "frankies-bandage-boo-boos",
+      "data-grades": "prek k",
+      "data-price": "$0.99",
+      "data-skill": "prek"
+    },
+    "links": [
+      {
+        "text": "Buy $0.99",
+        "attrs": {
+          "href": "https://buy.stripe.com/5kQcN673j0T1eGMemH6AM0a"
+        }
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "$0.99",
+    "status": "available",
+    "alt": "Illustrated game card for Frankie’s Bandage Boo-Boos"
+  },
+  {
+    "page": "little-play",
+    "key": "little-town-map-makers",
+    "title": "Little Town Map Makers",
+    "summary": "Build a town, solve map clues, and plan delivery routes.",
+    "attrs": {
+      "id": "little-town-map-makers",
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "social"
+    },
+    "links": [
+      {
+        "text": "Buy $1.99",
+        "attrs": {
+          "href": "https://buy.stripe.com/5kQ9AU1IZatB1U0emH6AM0b"
+        }
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "available",
+    "alt": "Illustrated game card for Little Town Map Makers"
+  },
+  {
+    "page": "little-play",
+    "key": "triangle-detectives",
+    "title": "Triangle Detectives",
+    "summary": "Look for straight sides, corners, and closed shapes.",
+    "attrs": {
+      "id": "triangle-detectives",
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Buy $1.99",
+        "attrs": {
+          "href": "https://buy.stripe.com/aFaeVecnDatB8io92n6AM0c"
+        }
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "available",
+    "alt": "Illustrated game card for Triangle Detectives"
+  },
+  {
+    "page": "little-play",
+    "key": "turkey-pizza-delivery",
+    "title": "Turkey’s Pizza Delivery",
+    "summary": "Count toppings and match each pizza to an animal’s order.",
+    "attrs": {
+      "id": "turkey-pizza-delivery",
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Buy $1.99",
+        "attrs": {
+          "href": "https://buy.stripe.com/eVqfZi2N3319cyE2DZ6AM0d"
+        }
+      }
+    ],
+    "category": "Little Play",
+    "priceLabel": "$1.99",
+    "status": "available",
+    "alt": "Illustrated game card for Turkey’s Pizza Delivery"
   }
 ]
