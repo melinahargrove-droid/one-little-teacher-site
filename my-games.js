@@ -56,7 +56,7 @@ $('email-form').onsubmit=async event=>{
   event.preventDefault();if(!config.enabled){message('Purchase access is not enabled in this preview.');return;}
   const button=event.submitter;button.disabled=true;
   try {
-    await api(`/auth/v1/otp?redirect_to=${encodeURIComponent(location.origin+location.pathname)}`,{email:$('email').value.trim(),create_user:true});
+    await api(`/auth/v1/otp?redirect_to=${encodeURIComponent('https://onelittleteacher.com/my-games.html')}`,{email:$('email').value.trim(),create_user:true});
     message('Check your inbox for a sign-in link. Open it on this device to download your games.');
   }catch{message('We couldn’t send a sign-in link. Please wait a moment and try again.');}
   finally{button.disabled=false;}
