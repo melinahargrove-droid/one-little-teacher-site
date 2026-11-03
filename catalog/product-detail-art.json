@@ -126,5 +126,15 @@
     "path": "assets/cards/turkey-pizza-delivery.webp",
     "sha256": "7903d837d9a201da1ceac3ccdd914e475ebcee81244e42d2e0a19e573d97947e",
     "alt": "Illustrated game card for Turkey’s Pizza Delivery"
+  },
+  "city-sound-detectives": {
+    "path": "assets/cards/city-sound-detectives.png",
+    "sha256": "138ad8755fed9cc9e95bb61cdec854801ac2efc6991c32a5c5a3dccb1b76b453",
+    "alt": "Soft watercolor city bus and singing birds in a neighborhood"
+  },
+  "festival-of-colors": {
+    "path": "assets/cards/festival-of-colors.png",
+    "sha256": "836f273705664231c67c1614c9ccc711e9b017507e0163bf308218c113a15eaa",
+    "alt": "Soft watercolor children sorting red, orange, blue and purple petals into bowls"
   }
 }

@@ -109,6 +109,48 @@
         "verifiedAt": "2026-11-03",
         "verificationBasis": "owner-confirmed edition provenance"
       }
+    },
+    {
+      "id": "song-in-the-city",
+      "title": "Song in the City",
+      "gameSlugs": [
+        "city-sound-detectives"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B0i0ZGWKj",
+        "format": "Hardcover",
+        "verified": true,
+        "destinationVerified": true,
+        "affiliateTagVerified": false,
+        "verificationBasis": "owner-confirmed correct book destination",
+        "verificationStatus": "Owner confirmed correct book; affiliate tag not independently verified",
+        "providedBy": "owner",
+        "providedAt": "2026-11-03"
+      },
+      "kindle": null
+    },
+    {
+      "id": "festival-of-colors",
+      "title": "Festival of Colors",
+      "gameSlugs": [
+        "festival-of-colors"
+      ],
+      "physical": {
+        "url": "https://link.amazon/B07x2pWCR",
+        "format": "Hardcover",
+        "verified": true,
+        "providedBy": "owner",
+        "destinationVerified": true,
+        "verifiedAt": "2026-11-03",
+        "resolvedUrl": "https://www.amazon.com/Festival-Colors-Surishtha-Sehgal/dp/1481420496?crid=1MATBL46HS01D&dib=eyJ2IjoiMSJ9.u23OJbl-DZlw1C1v3RJj3UVlhqxeS59zEz92-GE6L3Qe48g9vbY22vkrS2HxKl0ZnlnYCFo-s64fee6akANfU6Hi5eBSRSmw0qaX6cmnS8KL_asXYXqodJbcZd5iAImiD_TurwvHiA0FB_coGO7eiLIi4onZ6TrtRrvgdaR1lEHQF2a8lbss-47QDY53Bh4-2x8sp3ZMma9xNU49fIRFdWipttizoJt83FfLk4Ta0N0.LkhMcb8yMvTpSqer7U3-4kcAByUZ6LbRvYusbRzSSag&dib_tag=se&keywords=festival+of+colors&qid=1793667058&sprefix=festival+of+colors%2Caps%2C283&sr=8-1&linkCode=sl2&tag=melinasn-20&linkId=cff098274cdb4c749a725a4a694d414f&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-117b26083107f346&btn_type=ss&btn_ref=srctok-117b26083107f346"
+      },
+      "kindle": {
+        "url": "https://link.amazon/B01KZFG8P",
+        "format": "Kindle",
+        "verified": false,
+        "providedBy": "owner",
+        "verificationStatus": "Amazon returned HTTP 500; not independently verified"
+      }
     }
   ],
   "publicationApproved": true

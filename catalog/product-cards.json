@@ -1203,5 +1203,57 @@
     "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Turkey’s Pizza Delivery"
+  },
+  {
+    "page": "little-play",
+    "key": "city-sound-detectives",
+    "title": "City Sound Detectives",
+    "summary": "Listen, match city sounds, and build a sound sequence.",
+    "attrs": {
+      "id": "city-sound-detectives",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "literacy",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/city-sound-detectives.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Soft watercolor city bus and singing birds in a neighborhood"
+  },
+  {
+    "page": "little-play",
+    "key": "festival-of-colors",
+    "title": "Festival of Colors",
+    "summary": "Sort colorful petals, press them into powder, and celebrate with a color toss.",
+    "attrs": {
+      "id": "festival-of-colors",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "math",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/festival-of-colors.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Soft watercolor children sorting red, orange, blue and purple petals into bowls"
   }
 ]
