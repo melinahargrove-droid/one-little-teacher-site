@@ -1092,7 +1092,7 @@
     "attrs": {
       "id": "witchs-wacky-wardrobe",
       "data-grades": "prek k",
-      "data-price": "$1.99",
+      "data-price": "$2.99",
       "data-skill": "math"
     },
     "links": [
@@ -1104,7 +1104,7 @@
       }
     ],
     "category": "Little Play",
-    "priceLabel": "$1.99",
+    "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Witch’s Wacky Wardrobe"
   },
@@ -1116,7 +1116,7 @@
     "attrs": {
       "id": "frankies-bandage-boo-boos",
       "data-grades": "prek k",
-      "data-price": "$0.99",
+      "data-price": "$2.99",
       "data-skill": "prek"
     },
     "links": [
@@ -1128,7 +1128,7 @@
       }
     ],
     "category": "Little Play",
-    "priceLabel": "$0.99",
+    "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Frankie’s Bandage Boo-Boos"
   },
@@ -1140,7 +1140,7 @@
     "attrs": {
       "id": "little-town-map-makers",
       "data-grades": "prek k",
-      "data-price": "$1.99",
+      "data-price": "$2.99",
       "data-skill": "social"
     },
     "links": [
@@ -1152,7 +1152,7 @@
       }
     ],
     "category": "Little Play",
-    "priceLabel": "$1.99",
+    "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Little Town Map Makers"
   },
@@ -1164,7 +1164,7 @@
     "attrs": {
       "id": "triangle-detectives",
       "data-grades": "prek k",
-      "data-price": "$1.99",
+      "data-price": "$2.99",
       "data-skill": "math"
     },
     "links": [
@@ -1176,7 +1176,7 @@
       }
     ],
     "category": "Little Play",
-    "priceLabel": "$1.99",
+    "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Triangle Detectives"
   },
@@ -1188,7 +1188,7 @@
     "attrs": {
       "id": "turkey-pizza-delivery",
       "data-grades": "prek k",
-      "data-price": "$1.99",
+      "data-price": "$2.99",
       "data-skill": "math"
     },
     "links": [
@@ -1200,7 +1200,7 @@
       }
     ],
     "category": "Little Play",
-    "priceLabel": "$1.99",
+    "priceLabel": "$2.99",
     "status": "available",
     "alt": "Illustrated game card for Turkey’s Pizza Delivery"
   }
