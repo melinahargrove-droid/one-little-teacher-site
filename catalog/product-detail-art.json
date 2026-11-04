@@ -141,5 +141,15 @@
     "path": "assets/cards/leaf-man.png",
     "sha256": "74d947a087c66b9202c26623f358f8686f4dac06d9b7a96d61bb1285de97d17d",
     "alt": "Soft watercolor Leaf Man made of autumn leaves with a squirrel and songbird"
+  },
+  "sign-spotters": {
+    "path": "assets/cards/sign-spotters.png",
+    "sha256": "1d3c215ac153e7e85c38a2b77c802702fbcda8becf6bacd4838fbecab7b76825",
+    "alt": "Watercolor neighborhood with a child noticing a stop sign near a library and bus stop"
+  },
+  "sky-color-studio": {
+    "path": "assets/cards/sky-color-studio.png",
+    "sha256": "c0f4b568b9f6f99a210e6bc42c3021d1f440c5c9133f87590fea52e3539a62c6",
+    "alt": "Watercolor sunset over a village with paint pots and a wooden paintbrush"
   }
 }

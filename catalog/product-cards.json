@@ -1281,5 +1281,57 @@
     "priceLabel": "Free",
     "status": "available",
     "alt": "Soft watercolor Leaf Man made of autumn leaves with a squirrel and songbird"
+  },
+  {
+    "page": "little-play",
+    "key": "sign-spotters",
+    "title": "Sign Spotters",
+    "summary": "Listen to neighborhood clues, match familiar signs, and put missing signs back.",
+    "attrs": {
+      "id": "sign-spotters",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "literacy",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/sign-spotters.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor neighborhood with a child noticing a stop sign near a library and bus stop"
+  },
+  {
+    "page": "little-play",
+    "key": "sky-color-studio",
+    "title": "Sky Color Studio",
+    "summary": "Explore sky colors and take turns creating a shared painting.",
+    "attrs": {
+      "id": "sky-color-studio",
+      "data-grades": "prek k",
+      "data-price": "free",
+      "data-skill": "social",
+      "data-collection": "book-companion"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/sky-color-studio.html",
+          "class": "mini-price is-free"
+        },
+        "text": "Explore & play free"
+      }
+    ],
+    "category": "Book Companion Games",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "Watercolor sunset over a village with paint pots and a wooden paintbrush"
   }
 ]
