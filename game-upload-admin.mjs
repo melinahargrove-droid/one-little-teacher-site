@@ -1,4 +1,4 @@
-import {PROD,verifySessionAfterAuth,validateFiles,createQueue,applyOwnerMetadata} from './game-upload-core.mjs?v=18-9863d7a0';
+import {PROD,verifySessionAfterAuth,validateFiles,createQueue,applyOwnerMetadata} from './game-upload-core.mjs?v=12-uniform20261104';
 const $=id=>document.getElementById(id);
 let accessToken='',config=null,ownerVerified=false,selected=[],queue=null,busy=false;
 // Callback credential is consumed once into lexical memory, then removed from the visible URL.
@@ -6,7 +6,7 @@ const fragment=new URLSearchParams(location.hash.slice(1));accessToken=fragment.
 for(const name of [...fragment.keys()])fragment.delete(name);
 if(location.hash)history.replaceState(null,'',location.pathname+location.search);
 const status=text=>{$('status').textContent=text;};
-function buttons(){const enabled=config?.enabled===true&&!busy;$('login').disabled=!enabled;$('check').disabled=!enabled||!accessToken;$('files').disabled=!enabled||!ownerVerified;$('window').disabled=!enabled||!accessToken;const uploadReady=config?.uploadReady===true&&Date.now()<config.expiresAt;$('pilot').disabled=!enabled||!uploadReady||!ownerVerified||selected.length!==18||!!queue?.count();$('remaining').disabled=!enabled||!uploadReady||!ownerVerified||!queue||queue.count()<1||queue.count()===18;}
+function buttons(){const enabled=config?.enabled===true&&!busy;$('login').disabled=!enabled;$('check').disabled=!enabled||!accessToken;$('files').disabled=!enabled||!ownerVerified;$('window').disabled=!enabled||!accessToken;const uploadReady=config?.uploadReady===true&&Date.now()<config.expiresAt;$('pilot').disabled=!enabled||!uploadReady||!ownerVerified||selected.length!==12||!!queue?.count();$('remaining').disabled=!enabled||!uploadReady||!ownerVerified||!queue||queue.count()<1||queue.count()===12;}
 async function jsonBounded(response,max=16384){const reader=response.body.getReader();let text='',bytes=0;const decoder=new TextDecoder();try{while(true){const {done,value}=await reader.read();if(done)break;bytes+=value.length;if(bytes>max)throw Error('response');text+=decoder.decode(value,{stream:true});}text+=decoder.decode();return JSON.parse(text);}finally{await reader.cancel().catch(()=>{});reader.releaseLock();}}
 async function sessionCheck(){
  ownerVerified=false;if(!accessToken)throw Error('Sign in with the production owner account.');
@@ -35,13 +35,14 @@ $('files').addEventListener('change',()=>guarded(async()=>{
   const r=await fetch(PROD+'/functions/v1/olt-games-private-upload',{method:'POST',headers:{apikey:config.publishableKey,Authorization:'Bearer '+accessToken,'Content-Type':'application/octet-stream'},body:file,credentials:'omit',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(115000)});
   const receipt=await jsonBounded(r);return {status:r.status,receipt};
  },onReceipt:r=>{const line=document.createElement('li');line.textContent=`${r.slug} ${r.format}: ${r.result} (${r.bytes} bytes)`;$('receipts').append(line);}});
- status('All eighteen file hashes match. Run the largest-file pilot first.');
+ status('All twelve file hashes match. Run the largest-file pilot first.');
 }));
-$('pilot').addEventListener('click',()=>guarded(async()=>{await queue.run({pilot:true});status('Largest-file pilot verified. Review before starting the remaining seventeen.');}));
-$('remaining').addEventListener('click',()=>guarded(async()=>{const n=await queue.run();status(`${n}/18 private artifacts verified. Retire the temporary endpoint now.`);}));
+$('pilot').addEventListener('click',()=>guarded(async()=>{await queue.run({pilot:true});status('Largest-file pilot verified. Review before starting the remaining eleven.');}));
+$('remaining').addEventListener('click',()=>guarded(async()=>{const n=await queue.run();status(`${n}/12 private artifacts verified. Retire the temporary endpoint now.`);}));
 window.addEventListener('pagehide',()=>{accessToken='';ownerVerified=false;});
 try{
  const r=await fetch('./game-upload-config.json',{credentials:'omit',cache:'no-store',redirect:'error'});config=await jsonBounded(r,4096);config.uploadReady=false;
  if(config.enabled!==true||config.project!==PROD||location.origin!==config.allowedOrigin||!config.publishableKey||config.callbackURL!=='https://onelittleteacher.com/game-upload.html'||location.pathname!=='/game-upload.html')throw Error('This admin template is disabled until the parent approves production Auth and the exact page origin.');
  status(accessToken?'Callback received; check production owner access.':'Sign in to the production owner account to begin.');
 }catch(e){config=null;accessToken='';status(e.message||'Configuration unavailable.');}finally{buttons();}
+

@@ -5,10 +5,10 @@ export function verifySessionAfterAuth(token,user,now=Date.now()){
  if(c.iss!==PROD+'/auth/v1'||c.sub!==user.id||c.aud!=='authenticated'||c.role!=='authenticated'||!Number.isFinite(c.exp)||c.exp<=now/1000||!user.email_confirmed_at||user.is_anonymous)throw Error('owner');
 }
 export async function validateFiles(files,entries){
- if(files.length!==18||entries.length!==18)throw Error('Select exactly the nine customer ZIPs and nine extracted game HTML files.');
+ if(files.length!==12||entries.length!==12)throw Error('Select exactly the six customer ZIPs and six extracted game HTML files.');
  const selected=new Map();
- for(const file of files){if(file.size>16233961||file.size<1)throw Error('A selected file has an unexpected size.');const h=await digest(await file.arrayBuffer());const e=entries.find(e=>e.sha256===h&&e.bytes===file.size);if(!e||selected.has(h))throw Error('A selected file is not an exact approved artifact, or is duplicated.');selected.set(h,{file,entry:e});}
- if(selected.size!==18)throw Error('The approved file set is incomplete.');return [...selected.values()].sort((a,b)=>b.entry.bytes-a.entry.bytes);
+ for(const file of files){if(file.size>12941428||file.size<1)throw Error('A selected file has an unexpected size.');const h=await digest(await file.arrayBuffer());const e=entries.find(e=>e.sha256===h&&e.bytes===file.size);if(!e||selected.has(h))throw Error('A selected file is not an exact approved artifact, or is duplicated.');selected.set(h,{file,entry:e});}
+ if(selected.size!==12)throw Error('The approved file set is incomplete.');return [...selected.values()].sort((a,b)=>b.entry.bytes-a.entry.bytes);
 }
 export function checkUploadReceipt(status,r,c,e){if(status!==200||!['verified_uploaded','verified_existing'].includes(r.result)||r.manifestID!==c.manifestID||r.deploymentID!==c.deploymentID||r.sha256!==e.sha256||r.bytes!==e.bytes)throw Error('Upload was not verified. Stop and reconcile the private object before retrying.');}
 export function createQueue({files,config,ownerCheck,post,onReceipt=()=>{},now=Date.now}){
@@ -30,9 +30,10 @@ export function applyUploadTarget(config,target,now=Date.now()){
 
 export function applyOwnerMetadata(config,target,now=Date.now()){
  config.uploadReady=false;
- if(!Array.isArray(target.entries)||target.entries.length!==18||!/^[a-f0-9]{64}$/.test(target.manifestID||''))throw Error('Owner metadata is invalid.');
- const seen=new Set();for(const e of target.entries){if(!/^[a-f0-9]{64}$/.test(e.sha256||'')||!Number.isSafeInteger(e.bytes)||e.bytes<1||e.bytes>16233961||!['html','zip'].includes(e.format)||typeof e.slug!=='string'||seen.has(e.sha256))throw Error('Owner metadata is invalid.');seen.add(e.sha256);}
+ if(!Array.isArray(target.entries)||target.entries.length!==12||!/^[a-f0-9]{64}$/.test(target.manifestID||''))throw Error('Owner metadata is invalid.');
+ const seen=new Set();for(const e of target.entries){if(!/^[a-f0-9]{64}$/.test(e.sha256||'')||!Number.isSafeInteger(e.bytes)||e.bytes<1||e.bytes>12941428||!['html','zip'].includes(e.format)||typeof e.slug!=='string'||seen.has(e.sha256))throw Error('Owner metadata is invalid.');seen.add(e.sha256);}
  if(config.manifestID&&config.manifestID!==target.manifestID)throw Error('Approved inventory changed. Reload and sign in again.');
  if(target.project!==PROD||target.allowedOrigin!==config.allowedOrigin||!Number.isFinite(target.expiresAt)||target.expiresAt<=now)throw Error('Owner metadata expired or invalid.');
  config.manifestID=target.manifestID;if(target.ready===true)applyUploadTarget(config,target,now);else if(target.ready!==false)throw Error('Invalid upload gate.');config.entries=target.entries;
 }
+
