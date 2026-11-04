@@ -225,106 +225,6 @@
   },
   {
     "page": "little-play",
-    "key": "count-the-objects",
-    "title": "Count the Objects",
-    "summary": "Count the objects, pick the number!",
-    "attrs": {
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "math"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "games/everyday-counting-objects.html",
-          "class": "mini-price is-free",
-          "style": "text-decoration:none; display:inline-block;"
-        },
-        "text": "▶ Play Free"
-      }
-    ],
-    "category": "Little Play",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Count the Objects"
-  },
-  {
-    "page": "little-play",
-    "key": "make-a-number",
-    "title": "Make a Number",
-    "summary": "Tap to add, build the target number!",
-    "attrs": {
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "math"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "games/everyday-make-a-number.html",
-          "class": "mini-price is-free",
-          "style": "text-decoration:none; display:inline-block;"
-        },
-        "text": "▶ Play Free"
-      }
-    ],
-    "category": "Little Play",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Make a Number"
-  },
-  {
-    "page": "little-play",
-    "key": "match-the-amount",
-    "title": "Match the Amount",
-    "summary": "Find the group with just the right amount!",
-    "attrs": {
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "math"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "games/everyday-match-the-amount.html",
-          "class": "mini-price is-free",
-          "style": "text-decoration:none; display:inline-block;"
-        },
-        "text": "▶ Play Free"
-      }
-    ],
-    "category": "Little Play",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Match the Amount"
-  },
-  {
-    "page": "little-play",
-    "key": "which-has-more",
-    "title": "Which Has More?",
-    "summary": "More or fewer? You decide!",
-    "attrs": {
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "math"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "games/everyday-which-has-more.html",
-          "class": "mini-price is-free",
-          "style": "text-decoration:none; display:inline-block;"
-        },
-        "text": "▶ Play Free"
-      }
-    ],
-    "category": "Little Play",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Which Has More?"
-  },
-  {
-    "page": "little-play",
     "key": "math-fact-friends",
     "title": "Math Fact Friends",
     "summary": "Build fluency!",
@@ -1008,32 +908,6 @@
   },
   {
     "page": "little-play",
-    "key": "ghostly-glow",
-    "title": "Ghostly Glow",
-    "summary": "Tap a star, grow a little ghost, and enjoy a glowing surprise.",
-    "attrs": {
-      "id": "ghostly-glow",
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "prek",
-      "data-collection": "transition"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "products/ghostly-glow.html",
-          "class": "mini-price is-free"
-        },
-        "text": "Explore & play free"
-      }
-    ],
-    "category": "Transition Games",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Ghostly Glow"
-  },
-  {
-    "page": "little-play",
     "key": "turkeys-disguise-workshop",
     "title": "Turkey’s Disguise Workshop",
     "summary": "Listen to clues and choose pieces for five farm-animal disguises.",
@@ -1057,32 +931,6 @@
     "priceLabel": "Free",
     "status": "available",
     "alt": "Watercolor illustration for Turkey’s Disguise Workshop"
-  },
-  {
-    "page": "little-play",
-    "key": "hedgehogs-color-changing-coat",
-    "title": "Hedgehog’s Color-Changing Coat",
-    "summary": "Take turns revealing autumn colors on Hedgehog’s leafy coat.",
-    "attrs": {
-      "id": "hedgehogs-color-changing-coat",
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "prek",
-      "data-collection": "transition"
-    },
-    "links": [
-      {
-        "attrs": {
-          "href": "products/hedgehogs-color-changing-coat.html",
-          "class": "mini-price is-free"
-        },
-        "text": "Explore & play free"
-      }
-    ],
-    "category": "Transition Games",
-    "priceLabel": "Free",
-    "status": "available",
-    "alt": "Watercolor illustration for Hedgehog’s Color-Changing Coat"
   },
   {
     "page": "little-play",
