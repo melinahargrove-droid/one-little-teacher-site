@@ -151,5 +151,25 @@
     "path": "assets/cards/sky-color-studio.png",
     "sha256": "c0f4b568b9f6f99a210e6bc42c3021d1f440c5c9133f87590fea52e3539a62c6",
     "alt": "Watercolor sunset over a village with paint pots and a wooden paintbrush"
+  },
+  "counting-pumpkins": {
+    "path": "assets/cards/counting-pumpkins.png",
+    "sha256": "ad9cfe99ef9fb95ae37438a3769245870261dd19e10d98902227f9f8dbe2423f",
+    "alt": "A smiling farm girl with a blue gingham bow counts five watercolor pumpkins beside an autumn barn"
+  },
+  "turkeys-counting-quest": {
+    "path": "assets/cards/turkeys-counting-quest.png",
+    "sha256": "381042d7fe94f5a739063f6cc1edbc99ee4ecd9b9778046bb4e8eeebd7d5ae38",
+    "alt": "A friendly turkey explorer beside a wooden ten-frame with five turkey footprints, in a muted watercolor autumn farm"
+  },
+  "counting-crows": {
+    "path": "assets/cards/counting-crows.png",
+    "sha256": "f3495d79c131483c490795088d151cc5337497a89eab56b98e5a4b9272975ff7",
+    "alt": "Three friendly watercolor crows in an autumn meadow with a smiling scarecrow and a wooden fence"
+  },
+  "pump-up-the-parade": {
+    "path": "assets/cards/pump-up-the-parade.png",
+    "sha256": "6d713f69ecf9c606377a6151bbd77179bf9907f9dee95061299b82c624c57ee3",
+    "alt": "A soft watercolor autumn avenue with cheerful turkey, acorn and dog balloons and a hand pump on warm cream paper"
   }
 }

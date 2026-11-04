@@ -1333,5 +1333,102 @@
     "priceLabel": "Free",
     "status": "available",
     "alt": "Watercolor sunset over a village with paint pots and a wooden paintbrush"
+  },
+  {
+    "page": "little-play",
+    "key": "counting-pumpkins",
+    "title": "Counting Pumpkins",
+    "summary": "A little harvest. A little counting practice. Tap the pumpkins, count them, and choose the number that matches.",
+    "attrs": {
+      "id": "counting-pumpkins",
+      "data-grades": "prek k",
+      "data-price": "$2.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Explore Counting Pumpkins",
+        "attrs": {
+          "href": "products/counting-pumpkins.html"
+        }
+      }
+    ],
+    "category": "Math Games",
+    "priceLabel": "$2.99",
+    "status": "available",
+    "alt": "A smiling farm girl with a blue gingham bow counts five watercolor pumpkins beside an autumn barn"
+  },
+  {
+    "page": "little-play",
+    "key": "turkeys-counting-quest",
+    "title": "Turkey’s Counting Quest",
+    "summary": "Follow the tracks and find how many! Count turkey footprints in frames, then choose the number that matches.",
+    "attrs": {
+      "id": "turkeys-counting-quest",
+      "data-grades": "prek k",
+      "data-price": "$2.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Explore Turkey’s Counting Quest",
+        "attrs": {
+          "href": "products/turkeys-counting-quest.html"
+        }
+      }
+    ],
+    "category": "Math Games",
+    "priceLabel": "$2.99",
+    "status": "available",
+    "alt": "A friendly turkey explorer beside a wooden ten-frame with five turkey footprints, in a muted watercolor autumn farm"
+  },
+  {
+    "page": "little-play",
+    "key": "counting-crows",
+    "title": "Counting Crows",
+    "summary": "A few feathered friends. A little counting practice. Tap the crows, count them, and choose the number that matches.",
+    "attrs": {
+      "id": "counting-crows",
+      "data-grades": "prek k",
+      "data-price": "$2.99",
+      "data-skill": "math"
+    },
+    "links": [
+      {
+        "text": "Explore Counting Crows",
+        "attrs": {
+          "href": "products/counting-crows.html"
+        }
+      }
+    ],
+    "category": "Math Games",
+    "priceLabel": "$2.99",
+    "status": "available",
+    "alt": "Three friendly watercolor crows in an autumn meadow with a smiling scarecrow and a wooden fence"
+  },
+  {
+    "page": "little-play",
+    "key": "pump-up-the-parade",
+    "title": "Pump Up the Parade",
+    "summary": "Tap, count, and fill a cheerful balloon, then send it soaring into a class parade.",
+    "attrs": {
+      "id": "pump-up-the-parade",
+      "data-grades": "prek k",
+      "data-price": "$1.99",
+      "data-skill": "prek",
+      "data-collection": "transition"
+    },
+    "links": [
+      {
+        "text": "Explore Pump Up the Parade",
+        "attrs": {
+          "href": "products/pump-up-the-parade.html"
+        }
+      }
+    ],
+    "category": "Transition Games",
+    "priceLabel": "$1.99",
+    "status": "available",
+    "alt": "A soft watercolor autumn avenue with cheerful turkey, acorn and dog balloons and a hand pump on warm cream paper"
   }
 ]
