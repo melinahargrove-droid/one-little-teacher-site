@@ -1,0 +1,18 @@
+
+'use strict';
+const titles=["Main cover", "Color matching", "Teacher choices", "All sorted"];
+const descriptions=["A Jar of Feelings \u00b7 Main cover", "A Jar of Feelings \u00b7 Color matching", "A Jar of Feelings \u00b7 Teacher choices", "A Jar of Feelings \u00b7 All sorted"];
+const previews=["A Jar of Feelings product preview page 1", "A Jar of Feelings product preview page 2", "A Jar of Feelings product preview page 3", "A Jar of Feelings product preview page 4"];
+const images=Array.from(document.querySelectorAll('.thumbnail img')).map(i=>i.src);const previewImages=["../assets/a-jar-of-feelings/preview-1.webp", "../assets/a-jar-of-feelings/preview-2.webp", "../assets/a-jar-of-feelings/preview-3.webp", "../assets/a-jar-of-feelings/preview-4.webp"];
+const $=id=>document.getElementById(id);let selected=0,page=0;
+function selectImage(i){selected=(i+4)%4;$('main-img').src=images[selected];$('main-img').alt=descriptions[selected];$('image-name').textContent=titles[selected];$('image-counter').textContent=`${selected+1} of 4`;$('enlarge').setAttribute('aria-label','Enlarge '+titles[selected].toLowerCase());document.querySelectorAll('.thumbnail').forEach((b,n)=>b.setAttribute('aria-pressed',String(n===selected)));$('large-img').src=images[selected];$('large-img').alt=descriptions[selected];$('gallery-heading').textContent="A Jar of Feelings · "+titles[selected];$('large-counter').textContent=`${selected+1} of 4`;}
+document.querySelectorAll('[data-image]').forEach(b=>b.addEventListener('click',()=>selectImage(Number(b.dataset.image))));
+function openModal(id){$(id).showModal();document.body.style.overflow='hidden';$(id).querySelector('[data-close]').focus();}
+function closeModal(id){$(id).close();document.body.style.overflow='';}
+$('enlarge').addEventListener('click',()=>openModal('gallery-dialog'));$('previous-image').addEventListener('click',()=>selectImage(selected-1));$('next-image').addEventListener('click',()=>selectImage(selected+1));
+$('gallery-dialog').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();selectImage(selected-1)}if(e.key==='ArrowRight'){e.preventDefault();selectImage(selected+1)}});
+function setPage(i){page=Math.max(0,Math.min(3,i));$('preview-img').src=previewImages[page];$('preview-img').alt=previews[page];$('page-counter').textContent=`Page ${page+1} of 4`;$('previous-page').disabled=page===0;$('next-page').disabled=page===3;}
+$('open-preview').addEventListener('click',()=>{setPage(0);openModal('preview-dialog')});$('previous-page').addEventListener('click',()=>setPage(page-1));$('next-page').addEventListener('click',()=>setPage(page+1));
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>closeModal(b.dataset.close)));document.querySelectorAll('dialog').forEach(d=>{d.addEventListener('close',()=>document.body.style.overflow='');d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal(d.id)}})});
+const tabs=Array.from(document.querySelectorAll('[data-tab]'));function selectTab(name,focus=false){tabs.forEach(t=>{const active=t.dataset.tab===name;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;$('panel-'+t.dataset.tab).hidden=!active;if(active&&focus)t.focus();});}
+tabs.forEach((t,i)=>{t.addEventListener('click',()=>selectTab(t.dataset.tab));t.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%3;if(e.key==='ArrowLeft')n=(i+2)%3;if(e.key==='Home')n=0;if(e.key==='End')n=2;if(n!==undefined){e.preventDefault();selectTab(tabs[n].dataset.tab,true)}})});document.querySelectorAll('[data-nav-tab]').forEach(a=>a.addEventListener('click',()=>selectTab(a.dataset.navTab)));

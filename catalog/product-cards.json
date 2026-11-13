@@ -17,7 +17,7 @@
     "page": "index",
     "key": "little-connections",
     "title": "Little Connections",
-    "summary": "Build interactive concept boards — vocab, word walls, big ideas.",
+    "summary": "Build interactive concept boards \u2014 vocab, word walls, big ideas.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -31,7 +31,7 @@
     "page": "index",
     "key": "little-math",
     "title": "Little Math",
-    "summary": "Place value, operations, fractions & compound shapes — the complete math toolkit.",
+    "summary": "Place value, operations, fractions & compound shapes \u2014 the complete math toolkit.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -45,7 +45,7 @@
     "page": "index",
     "key": "little-maps",
     "title": "Little Maps",
-    "summary": "Create maps, teach geography, and make map activities — 9 base maps included.",
+    "summary": "Create maps, teach geography, and make map activities \u2014 9 base maps included.",
     "attrs": {
       "data-category": "solutions"
     },
@@ -68,7 +68,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -89,7 +89,7 @@
         "attrs": {
           "href": "tiny-tools.html"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "TINY TOOLS",
@@ -110,7 +110,7 @@
         "attrs": {
           "href": "little-play.html"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE PLAY",
@@ -131,7 +131,7 @@
         "attrs": {
           "href": "#little-solutions"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE SOLUTIONS",
@@ -152,7 +152,7 @@
         "attrs": {
           "href": "#little-creations"
         },
-        "text": "Explore collection →"
+        "text": "Explore collection \u2192"
       }
     ],
     "category": "LITTLE CREATIONS",
@@ -230,7 +230,7 @@
     "page": "little-play",
     "key": "sound-boxes",
     "title": "Sound Boxes",
-    "summary": "Teacher-led phoneme practice with 2–6 sound boxes.",
+    "summary": "Teacher-led phoneme practice with 2\u20136 sound boxes.",
     "attrs": {
       "data-grades": "prek k 1 2",
       "data-price": "free",
@@ -528,7 +528,7 @@
     "category": "Little Play",
     "priceLabel": "$1.99",
     "status": "paid-unavailable",
-    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o’clock."
+    "alt": "Watercolor wooden teaching clock with dot markers and hands pointing to three o\u2019clock."
   },
   {
     "page": "little-play",
@@ -555,11 +555,11 @@
       "data-cat": "Routines",
       "data-name": "visual timer"
     },
-    "links": [],
     "category": "Routines",
+    "alt": "Watercolor wooden visual timer and hourglass.",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor wooden visual timer and hourglass."
+    "links": []
   },
   {
     "page": "tiny-tools",
@@ -570,11 +570,11 @@
       "data-cat": "Management",
       "data-name": "help queue"
     },
-    "links": [],
     "category": "Management",
+    "alt": "Watercolor classroom figures waiting in an orderly line.",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor classroom figures waiting in an orderly line."
+    "links": []
   },
   {
     "page": "tiny-tools",
@@ -585,11 +585,11 @@
       "data-cat": "Participation",
       "data-name": "random name picker"
     },
-    "links": [],
     "category": "Participation",
+    "alt": "Watercolor selection sticks in a cup beside classroom figures.",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor selection sticks in a cup beside classroom figures."
+    "links": []
   },
   {
     "page": "tiny-tools",
@@ -601,11 +601,11 @@
       "data-name": "make groups",
       "id": "make-groups"
     },
-    "links": [],
     "category": "Participation",
+    "alt": "Watercolor illustration for Make Groups",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor illustration for Make Groups"
+    "links": []
   },
   {
     "page": "tiny-tools",
@@ -626,16 +626,16 @@
     "page": "tiny-tools",
     "key": "sound-boxes",
     "title": "Sound Boxes",
-    "summary": "Teacher-led phoneme practice with 2–6 sound boxes.",
+    "summary": "Teacher-led phoneme practice with 2\u20136 sound boxes.",
     "attrs": {
       "data-cat": "Learning",
       "data-name": "sound boxes"
     },
-    "links": [],
     "category": "Learning",
+    "alt": "Watercolor illustration for Sound Boxes",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor illustration for Sound Boxes"
+    "links": []
   },
   {
     "page": "tiny-tools",
@@ -706,17 +706,17 @@
       "data-cat": "Learning",
       "data-name": "printable paper maker"
     },
-    "links": [],
     "category": "Learning",
+    "alt": "Watercolor illustration for Printable Paper Maker",
     "status": "withdrawn-for-review",
     "priceLabel": "Currently unavailable",
-    "alt": "Watercolor illustration for Printable Paper Maker"
+    "links": []
   },
   {
     "page": "little-play",
     "key": "dogs-spotty-adventure",
-    "title": "Dog’s Spotty Adventure",
-    "summary": "Find colorful messes, count Dog’s spots, and scrub them away.",
+    "title": "Dog\u2019s Spotty Adventure",
+    "summary": "Find colorful messes, count Dog\u2019s spots, and scrub them away.",
     "attrs": {
       "id": "dogs-spotty-adventure",
       "data-grades": "prek k",
@@ -728,48 +728,85 @@
     "category": "Book Companion Games",
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
-    "alt": "Watercolor illustration for Dog’s Spotty Adventure"
+    "alt": "Watercolor illustration for Dog\u2019s Spotty Adventure"
   },
   {
     "page": "little-play",
     "key": "how-many-blew-away",
     "title": "How Many Blew Away?",
-    "summary": "Take a quick look, watch the leaves blow away, and choose how many you saw.",
+    "summary": "Take a quick look at a small group of leaves. Watch them whoosh away, then choose how many you saw. Count together when the leaves return.",
     "attrs": {
-      "id": "how-many-blew-away",
-      "data-grades": "prek k",
-      "data-price": "free",
-      "data-skill": "prek",
-      "data-collection": "book-companion"
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "leaves",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-matching|quantity-recognition"
     },
-    "links": [],
-    "category": "Book Companion Games",
-    "priceLabel": "Currently unavailable",
-    "status": "withdrawn-for-review",
-    "alt": "Watercolor illustration for How Many Blew Away?"
+    "links": [
+      "products/how-many-blew-away.html"
+    ],
+    "category": "Early Math",
+    "priceLabel": "$2.99",
+    "status": "available",
+    "alt": "How Many Blew Away? preview",
+    "browseTags": {
+      "theme": [
+        "Leaves"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number matching",
+        "Quantity recognition"
+      ]
+    }
   },
   {
     "page": "little-play",
     "key": "turkeys-disguise-workshop",
-    "title": "Turkey’s Disguise Workshop",
-    "summary": "Listen to clues and choose pieces for five farm-animal disguises.",
+    "title": "Turkey\u2019s Disguise Workshop",
+    "summary": "Look closely, choose matching pieces, and help Turkey look like a farm animal. Compare each finished disguise, then enjoy a costume parade.",
     "attrs": {
-      "id": "turkeys-disguise-workshop",
-      "data-grades": "prek k",
       "data-price": "free",
-      "data-skill": "prek",
-      "data-collection": "book-companion"
+      "data-skill": "math",
+      "data-theme": "turkeys|farm-animals",
+      "data-season": "fall",
+      "data-topic": "creative-play",
+      "data-learning-skill": "matching|observation|comparing-features"
     },
     "links": [],
-    "category": "Book Companion Games",
+    "category": "Book Companions",
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
-    "alt": "Watercolor illustration for Turkey’s Disguise Workshop"
+    "alt": "Turkey\u2019s Disguise Workshop preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys",
+        "Farm animals"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Creative play"
+      ],
+      "skill": [
+        "Matching",
+        "Observation",
+        "Comparing features"
+      ]
+    }
   },
   {
     "page": "little-play",
     "key": "witchs-wacky-wardrobe",
-    "title": "Witch’s Wacky Wardrobe",
+    "title": "Witch\u2019s Wacky Wardrobe",
     "summary": "Find and extend AB, AAB, and ABC clothesline patterns.",
     "attrs": {
       "id": "witchs-wacky-wardrobe",
@@ -781,12 +818,12 @@
     "category": "Little Play",
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
-    "alt": "Illustrated game card for Witch’s Wacky Wardrobe"
+    "alt": "Illustrated game card for Witch\u2019s Wacky Wardrobe"
   },
   {
     "page": "little-play",
     "key": "frankies-bandage-boo-boos",
-    "title": "Frankie’s Bandage Boo-Boos",
+    "title": "Frankie\u2019s Bandage Boo-Boos",
     "summary": "Name body parts and follow gentle spoken directions.",
     "attrs": {
       "id": "frankies-bandage-boo-boos",
@@ -798,7 +835,7 @@
     "category": "Little Play",
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
-    "alt": "Illustrated game card for Frankie’s Bandage Boo-Boos"
+    "alt": "Illustrated game card for Frankie\u2019s Bandage Boo-Boos"
   },
   {
     "page": "little-play",
@@ -837,8 +874,8 @@
   {
     "page": "little-play",
     "key": "turkey-pizza-delivery",
-    "title": "Turkey’s Pizza Delivery",
-    "summary": "Count toppings and match each pizza to an animal’s order.",
+    "title": "Turkey\u2019s Pizza Delivery",
+    "summary": "Count toppings and match each pizza to an animal\u2019s order.",
     "attrs": {
       "id": "turkey-pizza-delivery",
       "data-grades": "prek k",
@@ -849,7 +886,7 @@
     "category": "Little Play",
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
-    "alt": "Illustrated game card for Turkey’s Pizza Delivery"
+    "alt": "Illustrated game card for Turkey\u2019s Pizza Delivery"
   },
   {
     "page": "little-play",
@@ -961,7 +998,7 @@
   {
     "page": "little-play",
     "key": "turkeys-counting-quest",
-    "title": "Turkey’s Counting Quest",
+    "title": "Turkey\u2019s Counting Quest",
     "summary": "Follow the tracks and find how many! Count turkey footprints in frames, then choose the number that matches.",
     "attrs": {
       "id": "turkeys-counting-quest",
@@ -1105,5 +1142,545 @@
     "priceLabel": "Currently unavailable",
     "status": "withdrawn-for-review",
     "alt": "Watercolor illustration for Hedgehog's Color-Changing Coat"
+  },
+  {
+    "page": "little-play",
+    "key": "collecting-leaves",
+    "title": "Collecting Leaves",
+    "summary": "Draw a number card, choose colorful leaves, and fill a five or ten frame to match. Then explore one more, one less, or an equal amount.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "leaves",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-matching|comparing-amounts|one-more-one-less|ten-frames"
+    },
+    "links": [],
+    "category": "Math Games",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Collecting Leaves preview",
+    "browseTags": {
+      "theme": [
+        "Leaves"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number matching",
+        "Comparing amounts",
+        "One more / one less",
+        "Ten frames"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "turkey-number-order",
+    "title": "Turkey Number Order",
+    "summary": "Say the three hanging numbers, then choose the turkey holding the number that comes next. Practice counting forward, backward or a mix of both.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "turkeys",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-order"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/turkey-number-order.html"
+        },
+        "text": "View game details \u2192"
+      }
+    ],
+    "category": "Math Games",
+    "priceLabel": "$2.99 USD",
+    "status": "available",
+    "alt": "Turkey Number Order preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number order"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "fall-ten-frames",
+    "title": "Fall Ten Frames",
+    "summary": "Count the leaves in the frame, then choose the matching number card. Tap leaves to count each one once, or count along with recorded support.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "leaves",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-matching|ten-frames"
+    },
+    "links": [],
+    "category": "Math Games",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Fall Ten Frames preview",
+    "browseTags": {
+      "theme": [
+        "Leaves"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number matching",
+        "Ten frames"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "fall-counting-center",
+    "title": "Fall Counting Center",
+    "summary": "Count the acorns, then tap the wooden sign with the matching number. Start with a little collection or practice counting all the way to twenty.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "woodland-acorns",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-matching"
+    },
+    "links": [],
+    "category": "Math Games",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Fall Counting Center preview",
+    "browseTags": {
+      "theme": [
+        "Woodland & acorns"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number matching"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "sort-the-apples",
+    "title": "Sort the Apples",
+    "summary": "Pick an apple and put it in the basket with the matching color. Start with red and green, then add yellow when children are ready.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "apples",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "sorting|color-matching"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/sort-the-apples.html"
+        },
+        "text": "View game details \u2192"
+      }
+    ],
+    "category": "Math Games",
+    "priceLabel": "$2.99 USD",
+    "status": "available",
+    "alt": "Sort the Apples preview",
+    "browseTags": {
+      "theme": [
+        "Apples"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Sorting",
+        "Color matching"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "scarecrows-shape-shop",
+    "title": "Scarecrow\u2019s Shape Shop",
+    "summary": "Find the fabric shape for a nose, buttons, patch and pocket. Choose picture matching, shape names or shape clues, then watch your scarecrow wiggle when he is ready.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "scarecrows",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "shape-recognition|matching|observation"
+    },
+    "links": [],
+    "category": "Math Games",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Scarecrow\u2019s Shape Shop preview",
+    "browseTags": {
+      "theme": [
+        "Scarecrows"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Shape recognition",
+        "Matching",
+        "Observation"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "turkeys-feather-fun",
+    "title": "Turkey\u2019s Feather Fun",
+    "summary": "Count long tail feathers and compare more, same and fewer.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "turkeys",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|comparing-amounts"
+    },
+    "links": [],
+    "category": "Early Math",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Turkey\u2019s Feather Fun preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Comparing amounts"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "fall-leaf-explorers",
+    "title": "Fall Leaf Explorers",
+    "summary": "Explore autumn colors, leaf clues and the changing seasons in three teacher-paced activities.",
+    "attrs": {
+      "data-price": "free",
+      "data-skill": "science",
+      "data-theme": "leaves",
+      "data-season": "fall",
+      "data-topic": "science-nature",
+      "data-learning-skill": "sorting|color-matching|observation|sequencing"
+    },
+    "links": [],
+    "category": "Free Book Companion",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Fall Leaf Explorers preview",
+    "browseTags": {
+      "theme": [
+        "Leaves"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Science & nature"
+      ],
+      "skill": [
+        "Sorting",
+        "Color matching",
+        "Observation",
+        "Sequencing"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "old-ladys-silly-parade",
+    "title": "Old Lady\u2019s Silly Parade",
+    "summary": "Follow the story order, then arrange pictures in an imaginative parade studio after reading the book together.",
+    "attrs": {
+      "data-price": "free",
+      "data-skill": "literacy",
+      "data-theme": "turkeys",
+      "data-season": "fall",
+      "data-topic": "language-literacy|creative-play",
+      "data-learning-skill": "sequencing|retelling"
+    },
+    "links": [],
+    "category": "Free Book Companion",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Old Lady\u2019s Silly Parade preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Language & literacy",
+        "Creative play"
+      ],
+      "skill": [
+        "Sequencing",
+        "Retelling"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "pumpkin-soup-story-retelling",
+    "title": "Pumpkin Soup: Story Retelling",
+    "summary": "Retell Pumpkin Soup with a narrated picture-sequencing game after reading the book together.",
+    "attrs": {
+      "data-price": "free",
+      "data-skill": "literacy",
+      "data-theme": "pumpkins|food-cooking",
+      "data-season": "fall",
+      "data-topic": "language-literacy",
+      "data-learning-skill": "sequencing|retelling"
+    },
+    "links": [],
+    "category": "Free Book Companion",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Pumpkin Soup: Story Retelling preview",
+    "browseTags": {
+      "theme": [
+        "Pumpkins",
+        "Food & cooking"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Language & literacy"
+      ],
+      "skill": [
+        "Sequencing",
+        "Retelling"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "10-fat-turkeys",
+    "title": "10 Fat Turkeys: One Less on the Fence",
+    "summary": "Count down from ten, explore one less and zero, and find the turkeys again at the tree reunion.",
+    "attrs": {
+      "data-price": "free",
+      "data-skill": "math",
+      "data-theme": "turkeys",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-order|one-more-one-less"
+    },
+    "links": [
+      "products/10-fat-turkeys.html"
+    ],
+    "category": "Free Book Companion",
+    "priceLabel": "Free",
+    "status": "available",
+    "alt": "10 Fat Turkeys: One Less on the Fence preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number order",
+        "One more / one less"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "turkeys-fancy-feathers",
+    "title": "Turkey\u2019s Fancy Feathers",
+    "summary": "Build a colorful turkey tail while practicing repeating patterns, or let each child add a feather to a shared turkey.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "turkeys",
+      "data-season": "fall",
+      "data-topic": "math",
+      "data-learning-skill": "patterns|matching"
+    },
+    "links": [
+      "products/turkeys-fancy-feathers.html"
+    ],
+    "category": "Patterning & Transitions",
+    "priceLabel": "$2.99",
+    "status": "available",
+    "alt": "Turkey\u2019s Fancy Feathers preview",
+    "browseTags": {
+      "theme": [
+        "Turkeys"
+      ],
+      "season": [
+        "Fall"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Patterns",
+        "Matching"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "marshmallow-counting",
+    "title": "Marshmallow Counting",
+    "summary": "Count the marshmallows and choose the matching number sign, with optional tap-to-count and Count with me help.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "math",
+      "data-theme": "hot-cocoa|food-cooking",
+      "data-season": "winter",
+      "data-topic": "math",
+      "data-learning-skill": "counting|number-matching|quantity-recognition"
+    },
+    "links": [],
+    "category": "Winter Counting",
+    "priceLabel": "Currently unavailable",
+    "status": "withdrawn-for-review",
+    "alt": "Marshmallow Counting preview",
+    "browseTags": {
+      "theme": [
+        "Hot cocoa",
+        "Food & cooking"
+      ],
+      "season": [
+        "Winter"
+      ],
+      "topic": [
+        "Math"
+      ],
+      "skill": [
+        "Counting",
+        "Number matching",
+        "Quantity recognition"
+      ]
+    }
+  },
+  {
+    "page": "little-play",
+    "key": "snowball-word-builders",
+    "title": "Snowball Word Builders",
+    "summary": "Build, separate and complete compound words with picture snowballs and recorded narration.",
+    "attrs": {
+      "data-price": "paid",
+      "data-skill": "literacy",
+      "data-theme": "snow",
+      "data-season": "winter",
+      "data-topic": "literacy",
+      "data-learning-skill": "compound-words|listening"
+    },
+    "links": [
+      {
+        "attrs": {
+          "href": "products/snowball-word-builders.html"
+        },
+        "text": "View game details \u2192"
+      }
+    ],
+    "category": "Literacy Games",
+    "priceLabel": "$2.99 USD",
+    "status": "available",
+    "alt": "Snowball Word Builders gameplay",
+    "browseTags": {
+      "theme": [
+        "Snow"
+      ],
+      "season": [
+        "Winter"
+      ],
+      "topic": [
+        "Literacy"
+      ],
+      "skill": [
+        "Compound words",
+        "Listening"
+      ]
+    }
+  },
+  {
+    "key": "sneezys-snowy-do-over",
+    "title": "Sneezy\u2019s Snowy Do-Over",
+    "status": "available",
+    "priceLabel": "Free",
+    "links": [
+      "products/sneezys-snowy-do-over.html"
+    ]
+  },
+  {
+    "key": "a-jar-of-feelings",
+    "title": "A Jar of Feelings",
+    "status": "available",
+    "priceLabel": "Free",
+    "links": [
+      "products/a-jar-of-feelings.html"
+    ]
+  },
+  {
+    "key": "santas-present-delivery",
+    "title": "Santa\u2019s Present Delivery",
+    "status": "available",
+    "priceLabel": "$2.99",
+    "links": [
+      "products/santas-present-delivery.html"
+    ]
   }
 ]
