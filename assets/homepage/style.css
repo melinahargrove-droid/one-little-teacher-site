@@ -68,4 +68,4 @@ html:not([data-featured-ready]) .featured-row .card:nth-child(n+5){display:none}
 .text-resource .view{margin-top:auto;font-size:14px;color:#1a3a5c}
 
 /* Exact-source gameplay; fit without cropping screenshot UI. */
-.card .cover.actual-playview{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:#fff;padding:10px;overflow:hidden}.card .cover.actual-playview img{width:100%;height:100%;object-fit:contain;display:block}.card.text-resource:has(.actual-playview){display:block}.card.text-resource:has(.actual-playview) .card-copy{min-height:0}
+.card .cover.actual-playview{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:#fff;padding:10px;overflow:hidden}.card .cover.actual-playview img{width:100%;height:100%;object-fit:contain;display:block}.card.text-resource:not([hidden]):has(.actual-playview){display:block}.card.text-resource:has(.actual-playview) .card-copy{min-height:0}
