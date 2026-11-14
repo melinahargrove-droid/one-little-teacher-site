@@ -34,7 +34,7 @@ function updateResults() {
  ordered.forEach(card => { card.hidden = !shown.includes(card); grid.appendChild(card); });
  document.documentElement.dataset.featuredReady = 'true';
  document.querySelector('#result-count').textContent = featuredHomepage
-  ? (words.length ? 'Showing ' + shown.length + ' of ' + matches.length + ' matching games' : 'There’s more to explore! Browse all nine games on our Games page.')
+  ? (words.length ? 'Showing ' + shown.length + ' of ' + matches.length + ' matching games' : 'There’s more to explore! Browse all 17 games on our Games page.')
   : matches.length + (matches.length === 1 ? ' game' : ' games');
  document.querySelector('#no-results').hidden = matches.length !== 0;
  filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));

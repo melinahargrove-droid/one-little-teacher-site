@@ -57,3 +57,15 @@ html:not([data-featured-ready]) .featured-row .card:nth-child(n+5){display:none}
 #clear-search{margin-left:0}
 @media(max-width:900px){.catalog-filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sort-control{margin-left:0}}
 @media(max-width:480px){.catalog-filter-panel{padding:16px 12px}.catalog-filter-grid{gap:12px}.catalog-filter-grid select{font-size:14px;padding-left:8px}.catalog-filter-panel legend{font-size:16px}.sort-control{flex-basis:100%;justify-content:space-between}.sort-control select{flex:1;max-width:none}.filters{gap:8px}}
+
+/* Text-first launch cards: intentionally no image or image placeholder. */
+.text-resource{background:#fffdf8;border-top:5px solid #9db89a;min-height:0!important}
+.text-resource>a{height:100%;display:flex;flex-direction:column}
+.text-resource .card-copy{padding:26px 24px;display:flex;flex-direction:column;gap:12px;height:100%;min-height:220px}
+.text-resource h3{font-family:Georgia,serif;font-size:26px;line-height:1.2;margin:0}
+.text-resource .category{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#5c736d;font-weight:800}
+.text-resource .price{font-size:17px;color:#1a3a5c;font-weight:800}
+.text-resource .view{margin-top:auto;font-size:14px;color:#1a3a5c}
+
+/* Exact-source gameplay; fit without cropping screenshot UI. */
+.card .cover.actual-playview{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:#fff;padding:10px;overflow:hidden}.card .cover.actual-playview img{width:100%;height:100%;object-fit:contain;display:block}.card.text-resource:has(.actual-playview){display:block}.card.text-resource:has(.actual-playview) .card-copy{min-height:0}
